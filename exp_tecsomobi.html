@@ -31,26 +31,6 @@
       padding: 2rem 0;
     }
 
-    .back-button {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 1000;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-      transition: transform 0.3s ease;
-    }
-
-    .back-button:hover {
-      transform: translateY(-2px);
-      color: white;
-    }
-
     .detail-container {
       max-width: 1200px;
       margin: 80px auto 40px;
@@ -116,6 +96,52 @@
       border-top: 2px solid #dee2e6;
     }
 
+    .project-panel {
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+      border: 1px solid #e9ecef;
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-top: 1.25rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .architecture-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .architecture-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.25rem;
+      border-top: 4px solid var(--primary-color);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .architecture-card h6 {
+      color: var(--dark-bg);
+      font-size: 1.05rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .architecture-card ul {
+      margin-bottom: 0;
+      padding-left: 1.2rem;
+    }
+
+    .mini-badge {
+      display: inline-block;
+      background: rgba(189, 93, 56, 0.12);
+      color: #8a3f22;
+      padding: 0.35rem 0.75rem;
+      margin: 0.25rem 0.35rem 0.25rem 0;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
     code {
       background: #f4f4f4;
       padding: 2px 6px;
@@ -130,29 +156,24 @@
         padding: 1.5rem;
       }
       
-      .back-button {
-        position: relative;
-        top: 0;
-        left: 0;
-        display: block;
-        width: fit-content;
-        margin: 0 auto 2rem;
-      }
     }
   </style>
+  <link href="css/portfolio-case.css" rel="stylesheet">
 </head>
 
 <body>
-  <a href="index.html" class="back-button">
+  <div class="detail-top-actions">
+    <a href="index.html#experiencia-tecsomobi" class="portfolio-button portfolio-button--secondary">
     <i class="fas fa-arrow-left"></i> Voltar ao Portfólio
-  </a>
+    </a>
+  </div>
 
   <div class="detail-container">
     <div class="company-header">
       <h1>TECSOMOBI / AUTOPASS</h1>
       <h2>QA Engineer Sênior</h2>
       <div class="meta">
-        <i class="far fa-calendar-alt"></i> Outubro 2024 - Atual | Presencial (São Paulo, SP)
+        <i class="far fa-calendar-alt"></i> Outubro de 2024 a abril de 2026 · Presencial, SP
       </div>
     </div>
 
@@ -163,6 +184,17 @@
       estabilidade operacional e conformidade financeira.
     </p>
 
+    <h5>Arquitetura de qualidade e homologação por praça</h5>
+    <p>Em Orbi/TMOB, acompanhei jornadas para Vai Passe Fácil, ITAMOBI, Belém, Livramento e TOP. Levantei com Produto e Operações o que mudava entre praças, incluindo identidade visual, meios de pagamento, parametrização e regras da carteira ABT. Transformei essas diferenças em critérios de aceite, riscos, regressão e verificações antes do go-live.</p>
+    <h5>AWS, dados e validadores físicos</h5>
+    <p>Testei recargas da compra à utilização no validador, incluindo comunicação por MQTT, sincronização incremental por SFTP, QR, NFC/RFID e estados offline. Usei AWS Lambda, SQS, S3 e CloudWatch, consultas PostgreSQL, logs ADB/logcat e SQLite embarcado para acompanhar a jornada.</p>
+    <p>Nas investigações, liguei intenção de compra, PIX, pedido, token, arquivo incremental e uso no dispositivo. Conferi encoding, BOM e estrutura dos arquivos e repassei as consultas e o roteiro de diagnóstico a Desenvolvimento e Suporte N1/N2/N3.</p>
+    <ul>
+      <li><strong>Aplicativos e canais:</strong> conferi mensagens, saldo e pedido no app, WhatsApp e POS e comparei o retorno de cada canal com a API e o gateway de pagamento.</li>
+      <li><strong>Backend e AWS:</strong> correlacionei evento, pedido e token usando PostgreSQL e CloudWatch. Kibana, Dozzle e Argo apoiaram a investigação de serviços e integrações.</li>
+      <li><strong>Equipamento e contingência:</strong> validei tokenização online e offline, sincronização de recargas e permissões por arquivos incrementais, comunicação MQTT QoS 2, QR, aproximação NFC/RFID e registros de firmware.</li>
+      <li><strong>Homologação e operação:</strong> levei as verificações para regressão, double check e Go/No-Go de novas versões. Em incidentes, compartilhei consultas, hipóteses e retestes com os níveis de suporte e desenvolvimento.</li>
+    </ul>
     <h5><i class=""></i> Redução Crítica de Falhas Operacionais</h5>
     <ul>
       <li>Reduzi falhas em campo de 8% para 0,5% liderando QA técnica no lançamento e 
@@ -224,11 +256,88 @@
       <li><strong>Resultado quantificado:</strong> Redução de setup de massa de testes de <strong>2-4 minutos 
       para 8 segundos</strong> (melhoria de 1500%-3000%)</li>
       <li><strong>Beneficiara 12+ pessoas</strong> (QAs, Devs, Suprote e ETC)</li>
-      <li><strong>Link do projeto público:</strong> 
-      <a href="" target="_blank">Construção </a></li>
+      <li><strong>Desdobramento posterior:</strong> a partir desse aprendizado inicial, continuei em casa um laboratório próprio de automação mobile,
+      expandindo o piloto para uma arquitetura mais ampla.</li>
     </ul>
 
-    <h5><i class=""></i> Estruturação de Canal WhatsApp Business</h5>
+    <h5 id="tmobi-platform"><i class="fas fa-layer-group"></i> TMobi Automation Platform</h5>
+    <div class="project-panel">
+      <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">
+        Comecei com um piloto para lidar com a manutenção dos testes mobile na operação. Depois, desenvolvi por conta própria um laboratório em Ruby para explorar telas, propor cenários com IA e registrar a execução no Android.
+      </p>
+      <p style="font-size: 1.02rem; line-height: 1.8; margin-bottom: 1rem;">
+        No laboratório, a exploração captura imagens e XML da interface. As imagens alimentam a geração de casos em CSV, e o identificador CT-ID permite atualizar o mesmo caso no Notion. Os testes em Appium verificam o comportamento do app, com evidências de execução reunidas no Allure.
+      </p>
+
+      <div>
+        <span class="mini-badge">Ruby 3.2.x</span>
+        <span class="mini-badge">RSpec + Appium</span>
+        <span class="mini-badge">Claude / OpenAI / Gemini</span>
+        <span class="mini-badge">Notion API</span>
+        <span class="mini-badge">Allure</span>
+        <span class="mini-badge">Mailsac</span>
+        <span class="mini-badge">SMTP + WhatsApp</span>
+      </div>
+
+      <div class="architecture-grid">
+        <div class="architecture-card">
+          <h6><i class="fas fa-vial"></i> Testes End-to-End</h6>
+          <ul>
+            <li>Fluxos de cadastro com OTP, login, home, cartões, carteira digital e configurações</li>
+            <li>Page Object Model com evidências e waits customizados</li>
+            <li>Execução Android com Appium 2.x e UiAutomator2</li>
+          </ul>
+        </div>
+        <div class="architecture-card">
+          <h6><i class="fas fa-brain"></i> IA multimodal para casos e automação</h6>
+          <ul>
+            <li>Screenshots, árvore XML e contexto por praça para propor cenários, matrizes de risco, locators, Page Objects, validações e specs Ruby/RSpec.</li>
+            <li>Claude Code, Codex e modelos complementares apoiaram a geração e a revisão. O QA conferia os casos, executava em Appium e avaliava o resultado no Allure.</li>
+            <li>Fallback multi-provider entre Claude, OpenAI, Gemini e Ollama</li>
+            <li>Upsert no Notion usando CT-ID como chave de rastreabilidade</li>
+          </ul>
+        </div>
+        <div class="architecture-card">
+          <h6><i class="fas fa-sitemap"></i> Gestão & Observabilidade</h6>
+          <ul>
+            <li>Sync de execuções, bugs e dashboard operacional no Notion</li>
+            <li>Relatórios Allure para análise de falhas e evidências</li>
+            <li>Notificações automáticas por e-mail e WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+
+      <h6 style="margin-top: 1.5rem; color: var(--dark-bg);">Diferenciais implementados</h6>
+      <ul>
+        <li><strong>Smart Locator:</strong> localização híbrida por <code>resource-id</code>, XML, região da tela e cache por contexto, com fallback e suporte a PT/ES/EN.</li>
+        <li><strong>Geração assistida de automação:</strong> a árvore XML e a imagem contextualizavam a tela. O modelo propunha seletores, páginas, validações e specs. A execução em Ruby/RSpec e Appium permitia revisar a proposta no dispositivo e guardar o resultado no Allure.</li>
+        <li><strong>Pesquisa de agentes:</strong> experimentei agentes de API, MCP e RAG em provas de conceito e usei o laboratório para investigar reaproveitamento de contexto entre aplicativos e praças.</li>
+        <li><strong>Crawler autônomo:</strong> exploração sequencial do app com deduplicação por hash do XML e captura de screenshot + estrutura da tela.</li>
+        <li><strong>Integração completa com Notion:</strong> casos de teste, execução, bug report e dashboard conectados num mesmo fluxo operacional.</li>
+        <li><strong>Testes de carga:</strong> runner em Ruby para cenários de cadastro e login com automação de OTP via e-mail real.</li>
+      </ul>
+
+      <h6 style="margin-top: 1.5rem; color: var(--dark-bg);">Como isso se conecta com a experiência na TECSOMOBI</h6>
+      <ul>
+        <li>Nasceu a partir de problemas concretos de automação, massa de dados e confiabilidade encontrados no dia a dia.</li>
+        <li>Reaproveita a mesma mentalidade de QA orientado a risco, estabilidade operacional e redução de dependências manuais.</li>
+        <li>Serve como prova de profundidade técnica complementar, e não como substituição das entregas de produção descritas nesta página.</li>
+      </ul>
+
+      <h6 style="margin-top: 1.5rem; color: var(--dark-bg);">Estrutura arquitetural</h6>
+      <p style="margin-bottom: 0.75rem;">
+        O projeto foi organizado em camadas com <strong>core de driver/configuração</strong>, <strong>helpers reutilizáveis</strong>,
+        <strong>pages por domínio funcional</strong>, <strong>specs RSpec</strong>, módulos dedicados para <strong>IA</strong>,
+        <strong>crawler</strong>, <strong>dashboard</strong>, <strong>notificações</strong> e <strong>load tests</strong>.
+      </p>
+      <p style="margin-bottom: 0;">
+        Esse desenho reduziu acoplamento, facilitou expansão do catálogo de telas e permitiu escalar o uso da automação para além do time de QA,
+        conectando engenharia, operações e gestão de qualidade em um fluxo único.
+      </p>
+    </div>
+
+    <h5>WhatsApp Business, Typebot e Evolution</h5>
+    <p>Validei compra, recarga, consulta e atendimento por praça, incluindo estados de sessão, integração PIX/cartão, contingência e encaminhamento para atendimento humano. Documentei as exceções para homologação e suporte.</p>
     <ul>
       <li><strong>Estruturei canal oficial de vendas via WhatsApp Business</strong> como fonte única 
       de verdade para o time técnico</li>
@@ -363,7 +472,7 @@
     </div>
 
     <div class="bottom-navigation">
-      <a href="index.html" class="back-button" style="position: relative; top: 0; left: 0;">
+      <a href="index.html#experiencia-tecsomobi" class="portfolio-button portfolio-button--secondary">
         <i class="fas fa-arrow-left"></i> Voltar ao Portfólio
       </a>
     </div>

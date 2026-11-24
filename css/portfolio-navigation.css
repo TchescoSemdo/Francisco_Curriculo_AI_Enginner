@@ -1,0 +1,128 @@
+#sideNav {
+  --nav-background: #1a1a2e;
+  --nav-ink: #f3f5fa;
+  --nav-muted: #b9c3d3;
+  --nav-line: rgb(255 255 255 / 14%);
+  --nav-selected: rgb(255 255 255 / 10%);
+  --nav-accent: #f1a183;
+  z-index: 1020;
+  background: linear-gradient(135deg, var(--nav-background), #16213e);
+  color: var(--nav-ink);
+  scrollbar-color: #586379 var(--nav-background);
+  scrollbar-width: thin;
+}
+
+.portfolio-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  padding: 1.4rem 1rem;
+  border-bottom: 1px solid var(--nav-line);
+}
+
+.portfolio-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  color: var(--nav-ink);
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.portfolio-nav-brand:hover { color: var(--nav-ink); }
+.portfolio-nav-brand img {
+  border: 3px solid #bd5d38;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: border-color .18s ease, transform .18s ease;
+}
+.portfolio-nav-brand:hover img,
+.portfolio-nav-brand:focus-visible img { border-color: #fff; transform: scale(1.04); }
+.portfolio-nav-brand strong { display: block; font-size: 1rem; font-weight: 800; }
+.portfolio-nav-brand small { display: block; margin-top: .2rem; color: var(--nav-muted); }
+
+.portfolio-nav-toggle {
+  display: none;
+  align-items: center;
+  gap: .4rem;
+  min-height: 44px;
+  padding: .4rem .65rem;
+  border: 1px solid #68758d;
+  border-radius: .25rem;
+  background: transparent;
+  color: var(--nav-ink);
+  font-weight: 800;
+}
+
+#sideNav .portfolio-nav-body { padding: .75rem; }
+#sideNav .navbar-nav { display: flex; flex-direction: column; gap: .15rem; padding-left: 0; list-style: none; }
+#sideNav .nav-link {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  min-height: 44px;
+  padding: .6rem .7rem;
+  border-inline-start: 3px solid transparent;
+  color: var(--nav-ink);
+  font-size: .94rem;
+  line-height: 1.35;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+#sideNav .nav-link:hover,
+#sideNav .nav-link[aria-current="location"],
+#sideNav .portfolio-nav-group[open] > summary {
+  background: var(--nav-selected);
+}
+
+#sideNav .nav-link[aria-current="location"] {
+  border-inline-start-color: var(--nav-accent);
+  color: #fff;
+  font-weight: 800;
+}
+#sideNav .nav-link i { width: 1.25rem; flex: 0 0 1.25rem; text-align: center; }
+#sideNav summary { cursor: pointer; list-style: none; }
+#sideNav summary::-webkit-details-marker { display: none; }
+#sideNav .portfolio-nav-chevron { margin-left: auto; font-size: .7rem; }
+#sideNav .portfolio-nav-group[open] .portfolio-nav-chevron { transform: rotate(180deg); }
+#sideNav .portfolio-nav-group > ul { margin: .25rem 0 .5rem 1.3rem; padding-left: .6rem; border-left: 1px solid var(--nav-line); }
+#sideNav .nav-subitem .nav-link { color: var(--nav-muted); font-size: .875rem; font-weight: 400; }
+#sideNav .nav-subitem .nav-link[aria-current="location"] { color: var(--nav-accent); font-weight: 800; }
+#sideNav :is(a, summary, button):focus-visible { outline: 2px solid var(--nav-accent); outline-offset: 1px; }
+
+@media (min-width: 992px) {
+  #sideNav { position: fixed; inset: 0 auto 0 0; width: var(--sidebar-width); overflow-y: auto; }
+  .portfolio-nav-header { justify-content: center; padding: 1.35rem 1rem 1.15rem; }
+  .portfolio-nav-brand { flex-direction: column; gap: .75rem; text-align: center; }
+  .portfolio-nav-brand img { width: 160px; height: 160px; border-width: 4px; }
+}
+
+@media (max-width: 991px) {
+  body { overflow-x: clip; }
+  #sideNav { position: sticky; top: 0; }
+  .portfolio-nav-header { padding: .625rem .85rem; }
+  .portfolio-nav-brand img { width: 42px; height: 42px; }
+  .portfolio-nav-brand small { font-size: .73rem; }
+  #sideNav[data-ready] .portfolio-nav-toggle { display: inline-flex; }
+  #sideNav[data-ready] .portfolio-nav-body {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    max-height: min(72dvh, 40rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: var(--nav-background);
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 18%);
+  }
+  #sideNav[data-ready]:not([data-open]) .portfolio-nav-body { display: none; }
+  .resume-section[id], .project-card[id] { scroll-margin-top: 4.75rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+  .portfolio-nav-brand img { transition: none; transform: none; }
+}

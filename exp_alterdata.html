@@ -24,26 +24,6 @@
       padding: 2rem 0;
     }
 
-    .back-button {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 1000;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-      transition: transform 0.3s ease;
-    }
-
-    .back-button:hover {
-      transform: translateY(-2px);
-      color: white;
-    }
-
     .detail-container {
       max-width: 1200px;
       margin: 80px auto 40px;
@@ -139,22 +119,17 @@
         padding: 1.5rem;
       }
       
-      .back-button {
-        position: relative;
-        top: 0;
-        left: 0;
-        display: block;
-        width: fit-content;
-        margin: 0 auto 2rem;
-      }
     }
   </style>
+  <link href="css/portfolio-case.css" rel="stylesheet">
 </head>
 
 <body>
-  <a href="index.html" class="back-button">
+  <div class="detail-top-actions">
+    <a href="index.html#experiencia-alterdata" class="portfolio-button portfolio-button--secondary">
     <i class="fas fa-arrow-left"></i> Voltar ao Portfólio
-  </a>
+    </a>
+  </div>
 
   <div class="detail-container">
     <div class="company-header">
@@ -508,7 +483,7 @@
               <span class="skill-badge">ERP</span>
 
     <div class="bottom-navigation">
-      <a href="index.html" class="back-button" style="position: relative; top: 0; left: 0;">
+      <a href="index.html#experiencia-alterdata" class="portfolio-button portfolio-button--secondary">
         <i class="fas fa-arrow-left"></i> Voltar ao Portfólio
       </a>
     </div>

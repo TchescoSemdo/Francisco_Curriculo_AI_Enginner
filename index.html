@@ -4,11 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Francisco Carvalho - QA Engineer Sênior | Especialista em QDD, Automação e Sistemas Críticos">
+  <meta name="description" content="Francisco Carvalho, Senior Quality Engineer e SDET. Segurança de APIs e IA, automação com agentes e qualidade de sistemas críticos em pagamentos PIX e identidade digital.">
   <meta name="author" content="Francisco Carvalho">
-  <meta name="keywords" content="QA, SDET, Quality-Driven Development, Automação, API Testing, Mobile Testing">
 
-  <title>Francisco Carvalho | QA Engineer Sênior</title>
+  <title>Francisco Carvalho | Senior Quality Engineer e SDET</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,141 +38,6 @@
       overflow-x: hidden;
       margin: 0;
       padding: 0;
-    }
-
-    /* Navegação Lateral */
-    #sideNav {
-      background: linear-gradient(135deg, var(--dark-bg) 0%, #16213e 100%);
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: var(--sidebar-width);
-      height: 100vh;
-      overflow-y: auto;
-      z-index: 1000;
-      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-    }
-
-    #sideNav .navbar-collapse {
-      width: 100%;
-      align-items: flex-start;
-      flex-direction: column;
-    }
-
-    #sideNav .navbar-nav {
-      flex-direction: column;
-      width: 100%;
-      padding: 1rem 0;
-    }
-
-    /* Força menu visível em desktop */
-    @media (min-width: 992px) {
-      #sideNav .navbar-collapse {
-        display: block !important;
-        visibility: visible !important;
-        height: auto !important;
-      }
-      
-      #sideNav .navbar-toggler {
-        display: none !important;
-      }
-    }
-
-    #sideNav::-webkit-scrollbar {
-      width: 6px;
-    }
-
-    #sideNav::-webkit-scrollbar-thumb {
-      background: var(--primary-color);
-      border-radius: 3px;
-    }
-
-    .navbar-brand {
-      padding: 2rem 1.5rem;
-      text-align: center;
-    }
-
-    .img-profile {
-      width: 160px;
-      height: 160px;
-      border: 4px solid var(--primary-color);
-      object-fit: cover;
-      transition: transform 0.3s ease;
-      cursor: pointer;
-      display: block;
-    }
-
-    .img-profile:hover {
-      transform: scale(1.1);
-      border-color: #fff;
-    }
-
-    .navbar-nav {
-      padding: 1rem 0;
-      width: 100%;
-      flex-direction: column;
-    }
-
-    .nav-item {
-      margin: 0.3rem 0;
-      width: 100%;
-    }
-
-    .nav-link {
-      color: rgba(255,255,255,0.8) !important;
-      padding: 0.75rem 1.5rem;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      position: relative;
-      border-left: 3px solid transparent;
-      display: block;
-      text-decoration: none;
-    }
-
-    .nav-link:hover,
-    .nav-link.active {
-      color: #fff !important;
-      background: rgba(189, 93, 56, 0.2);
-      border-left-color: var(--primary-color);
-    }
-
-    .nav-link i {
-      margin-right: 10px;
-      width: 20px;
-      text-align: center;
-    }
-
-    /* Subitems (Projetos) */
-    .nav-subitem .nav-link {
-      font-size: 0.9rem;
-      padding: 0.5rem 1.5rem 0.5rem 3rem;
-      color: rgba(255,255,255,0.6) !important;
-    }
-
-    .nav-subitem .nav-link:hover {
-      color: rgba(255,255,255,0.9) !important;
-    }
-
-    /* Collapse chevron animation */
-    .nav-link .fa-chevron-down {
-      transition: transform 0.3s ease;
-    }
-
-    .nav-link:not(.collapsed) .fa-chevron-down {
-      transform: rotate(180deg);
-    }
-
-    /* Collapse container */
-    .nav-item .collapse {
-      background: rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-      margin-top: 0.3rem;
-    }
-
-    .nav-item .collapse .navbar-nav {
-      padding: 0.5rem 0;
     }
 
     /* Container Principal */
@@ -477,21 +341,6 @@
 
     /* Responsividade */
     @media (max-width: 991px) {
-      #sideNav {
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding: 0.5rem 1rem;
-      }
-      
-      #sideNav .navbar-toggler {
-        display: block !important;
-      }
-      
-      #sideNav .navbar-collapse:not(.show) {
-        display: none !important;
-      }
-
       .main-wrapper {
         margin-left: 0;
         width: 100%;
@@ -507,15 +356,6 @@
 
       h1 {
         font-size: 3rem;
-      }
-
-      .navbar-brand {
-        padding: 1rem;
-        text-align: left;
-      }
-
-      .img-profile {
-        display: none;
       }
 
       .experience-card {
@@ -656,41 +496,54 @@
 }
 
   </style>
+  <link href="css/portfolio-case.css" rel="stylesheet">
+  <link href="css/portfolio-intro.css" rel="stylesheet">
+  <link href="css/portfolio-navigation.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
 
   <!-- Navegação Lateral -->
-  <nav class="navbar navbar-expand-lg navbar-dark" id="sideNav">
-    <a class="navbar-brand" href="#page-top">
-      <span class="d-block d-lg-none">Francisco Carvalho</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/perfil01.jpeg" alt="">     
-          <!-- Background circle -->
-          <circle cx="80" cy="80" r="80" fill="#BD5D38"/>
-          <!-- Initials -->
-          <text x="80" y="95" font-family="'Saira Extra Condensed', Arial, sans-serif" font-size="60" font-weight="700" 
-                fill="white" text-anchor="middle" dominant-baseline="middle">Francisco Carvalho</text>
-        </svg>
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+  <nav class="portfolio-nav" id="sideNav" aria-label="Navegação do portfólio">
+    <div class="portfolio-nav-header">
+      <a class="portfolio-nav-brand" href="#page-top" aria-label="Francisco Carvalho, voltar ao topo">
+        <img class="img-profile" src="img/perfil01.jpeg" width="160" height="160" alt="">
+        <span><strong>Francisco Carvalho</strong><small>Quality Engineer · SDET</small></span>
+      </a>
+      <button class="portfolio-nav-toggle" type="button" aria-controls="portfolioNavLinks" aria-expanded="false">
+        <i class="fas fa-bars" aria-hidden="true"></i> Menu
+      </button>
+    </div>
+    <div class="portfolio-nav-body" id="portfolioNavLinks">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#sobre">
-            <i class="fas fa-user"></i> Sobre
+          <a class="nav-link" href="#sobre" aria-current="location">
+            <i class="fas fa-user" aria-hidden="true"></i> Sobre
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link collapsed" data-bs-toggle="collapse" href="#projetosCollapse" role="button" aria-expanded="false" aria-controls="projetosCollapse">
-            <i class="fas fa-project-diagram"></i> Projetos
-            <i class="fas fa-chevron-down float-end" style="font-size: 0.8rem; margin-top: 0.2rem;"></i>
+          <a class="nav-link" href="exp_pay2free.html#seguranca">
+            <i class="fas fa-shield-alt" aria-hidden="true"></i> Segurança de APIs e IA
           </a>
-          <div class="collapse" id="projetosCollapse">
-            <ul class="navbar-nav">
+        </li>
+        <li class="nav-item">
+          <details class="portfolio-nav-group">
+            <summary class="nav-link">
+              <i class="fas fa-project-diagram" aria-hidden="true"></i> Projetos
+              <i class="fas fa-chevron-down portfolio-nav-chevron" aria-hidden="true"></i>
+            </summary>
+            <ul class="navbar-nav" id="projetosCollapse">
+              <li class="nav-item nav-subitem"><a class="nav-link" href="#projetos">Todos os projetos</a></li>
+
+              <li class="nav-item nav-subitem">
+                <a class="nav-link" href="#projeto-pay2free-kyc">
+                  <i class="fas fa-id-card" aria-hidden="true"></i> Pay2Free · KYC e biometria
+                </a>
+              </li>
+              <li class="nav-item nav-subitem">
+                <a class="nav-link" href="#projeto-pay2free-pix"><i class="fas fa-exchange-alt" aria-hidden="true"></i> Pay2Free · PIX Cash-in e Cash-out</a>
+              </li>
+
               <li class="nav-item nav-subitem">
                 <a class="nav-link" href="#projeto-vai-passe">
                   <i class="fas fa-bus"></i> Vai Passe Fácil
@@ -722,7 +575,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </details>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#qdd">
@@ -730,34 +583,43 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link collapsed" data-bs-toggle="collapse" href="#experienciaCollapse" role="button" aria-expanded="false" aria-controls="experienciaCollapse">
-            <i class="fas fa-briefcase"></i> Experiência
-            <i class="fas fa-chevron-down float-end" style="font-size: 0.8rem; margin-top: 0.2rem;"></i>
-          </a>
-          <div class="collapse" id="experienciaCollapse">
-            <ul class="navbar-nav">
+          <details class="portfolio-nav-group">
+            <summary class="nav-link">
+              <i class="fas fa-briefcase" aria-hidden="true"></i> Experiência
+              <i class="fas fa-chevron-down portfolio-nav-chevron" aria-hidden="true"></i>
+            </summary>
+            <ul class="navbar-nav" id="experienciaCollapse">
+              <li class="nav-item nav-subitem"><a class="nav-link" href="#experiencia">Trajetória profissional</a></li>
+              <li class="nav-item nav-subitem">
+                <a class="nav-link" href="exp_pay2free.html">
+                  <i class="fas fa-exchange-alt" aria-hidden="true"></i> Pay2Free / Estrela Bet
+                </a>
+              </li>
+              <li class="nav-item nav-subitem">
+                <a class="nav-link" href="exp_miketec.html"><i class="fas fa-plane" aria-hidden="true"></i> Miketec / Azul / Smiles</a>
+              </li>
               <li class="nav-item nav-subitem">
                 <a class="nav-link" href="exp_tecsomobi.html">
-                  <i class="fas fa-building"></i> TECSOMOBI / AUTOPASS
+                  <i class="fas fa-building" aria-hidden="true"></i> Tecsomobi / Autopass
                 </a>
               </li>
               <li class="nav-item nav-subitem">
                 <a class="nav-link" href="exp_mjv.html">
-                  <i class="fas fa-car"></i> MJV / BANCO MERCEDES-BENZ
+                  <i class="fas fa-car" aria-hidden="true"></i> MJV / Banco Mercedes-Benz
                 </a>
               </li>
               <li class="nav-item nav-subitem">
                 <a class="nav-link" href="exp_claropay.html">
-                  <i class="fas fa-mobile-alt"></i>GLOBAL HITSS / CLARO PAY
+                  <i class="fas fa-mobile-alt" aria-hidden="true"></i> Global Hitss / Claro Pay
                 </a>
               </li>
               <li class="nav-item nav-subitem">
                 <a class="nav-link" href="exp_alterdata.html">
-                  <i class="fas fa-cogs"></i> ALTERDATA - BIMMER
+                  <i class="fas fa-cogs" aria-hidden="true"></i> Alterdata / BimerUp
                 </a>
               </li>
             </ul>
-          </div>
+          </details>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#automacao">
@@ -792,44 +654,61 @@
     <!-- Seção: Sobre -->
     <section class="resume-section" id="sobre">
       <div class="section-content w-100">
-        <h1 class="mb-0">FRANCISCO<span class="text-primary">CARVALHO</span>
-        </h1>
-        <div class="subheading mb-4" style="font-size: 1.3rem;">
-          QA Engineer Sênior | SDET | Quality Architect<br>
-          35 Anos · Osasco, SP · Brasil<br>
-          <i class="fas fa-phone"></i> (11) 94792-4766 <br>
-          <i class="fas fa-envelope"></i> Email: <a href="mailto:Franciscodevfullstack@gmail.com" style="text-decoration: none;">
-            <span class="text-primary">Franciscodevfullstack</span><span style="color: #343a40;">@gmail.com</span>
-          </a>
-        </div>
+        <header class="portfolio-intro">
+          <h1>FRANCISCO <span>CARVALHO</span></h1>
+          <p class="intro-role">Senior Quality Engineer · SDET</p>
+          <p class="intro-context">9+ anos em sistemas críticos e regulados · 36 anos · Osasco, SP</p>
+          <p class="intro-lead">Atuo em arquitetura de qualidade, automação e confiabilidade, com foco em <strong>segurança de APIs e IA, pagamentos e identidade digital</strong>. Conecto Produto, Engenharia, Segurança e Operações do discovery à produção assistida. Entre o clique do usuário e o resultado da operação, investigo onde a cadeia de APIs, eventos, regras e dados pode falhar.</p>
 
-        <div class="social-icons mb-4">
-          <a href="https://api.whatsapp.com/send?phone=+5511947924766" target="_blank" title="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/francisco-carvalho31/" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/franciscocarvalho-prog" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
+          <p class="intro-security"><strong>Segurança de APIs e IA na Pay2Free.</strong> Validei controles de autorização e integridade em PIX Cash-in/Cash-out e participei da investigação de prompt injection na documentoscopia com Serasa e Unico. A equipe encaminhou as evidências aos fornecedores. No AWS Bedrock, conferi os resultados de OCR, prova de vida e Face Match com a decisão de identidade no MongoDB.</p>
 
-        <p class="lead mb-4" style="font-size: 1.3rem; line-height: 1.8;">
-          <strong>Sou QA Engineer Sênior com 8+ anos de experiência</strong> atuando em sistemas críticos e regulamentados, 
-          com forte presença nos segmentos <strong>financeiro, meios de pagamento, mobilidade urbana e ERP</strong>. 
-          Especialista em <strong>Quality-Driven Development (QDD)</strong>, com atuação desde discovery, definição de 
-          regras de negócio e modelagem de riscos técnicos e financeiros até validações em produção e suporte a 
-          incidentes <strong>N2/N3</strong>.
-        </p>
+          <div class="portfolio-actions">
+            <a class="portfolio-button" href="exp_pay2free.html#seguranca">Ver trabalho em segurança</a>
+            <a class="portfolio-button portfolio-button--secondary" href="#projetos">Ver projetos</a>
+          </div>
+          <div class="social-icons intro-contacts" role="group" aria-label="Contatos profissionais">
+            <a href="https://api.whatsapp.com/send?phone=5511947924766" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/francisco-carvalho31/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://github.com/franciscocarvalho-prog" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="mailto:Franciscodevfullstack@gmail.com" aria-label="E-mail" title="E-mail"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            <a href="tel:+5511947924766" aria-label="Telefone" title="Telefone"><i class="fas fa-phone" aria-hidden="true"></i></a>
+          </div>
+        </header>
 
-        <div class="qdd-highlight" style="margin: 2rem 0;">
-          <h4 style="color: white; border-bottom: 3px solid rgba(255,255,255,0.3); padding-bottom: 1rem; margin-bottom: 1.5rem;">
-            <i class="fas fa-trophy"></i> Principais Realizações de Carreira
+        <section class="intro-practice" aria-label="Frentes de atuação">
+          <article>
+            <h2>Arquitetura e estratégia de qualidade</h2>
+            <p>Estruturo qualidade em projetos greenfield com QDD, Shift-Left e Risk-Based Testing. No refinamento, identifico lacunas e riscos técnicos e financeiros, alinho DoR, DoD e requisitos não funcionais e transformo critérios de aceite em um plano rastreável até a decisão de Go/No-Go e a produção assistida.</p>
+          </article>
+          <article>
+            <h2>Validação ponta a ponta</h2>
+            <p>Valido jornadas Web, Mobile e API entre microsserviços, mensageria, cloud, bancos e IoT. Combino testes funcionais, exploratórios, de integração, contrato, regressão, performance, segurança e UAT com tabelas de decisão, transições de estado, análise de valor-limite e Pairwise.</p>
+            <p>Trabalho com PIX/SPI/DICT, Cash-in/Cash-out, wallets, cartões, tokenização, 3DS, antifraude, crédito B2B, KYC/AML, jogos e apostas, e LGPD. Em Cloud-to-Edge, atuo com ABT, NFC/RFID, MQTT, SFTP, firmware e fluxos offline-first.</p>
+          </article>
+          <article>
+            <h2>Automação e agentes de IA</h2>
+            <p>Desenvolvo ferramental próprio com Claude Code, Agent Skills, MCP e integrações por API com Jira e Notion. Transformo histórias em planos, casos, subtarefas e evidências. A partir de XML e DOM, apoio a geração de Page Objects, locators e specs com Ruby, Appium, RSpec, Smart Locator e mecanismos de self-healing.</p>
+            <p>Combino execução determinística, modelos de texto e visão, RAG em SQLite/FTS5, cache por hash e telemetria de tokens, latência e custo. Uso MCP Chrome DevTools para consultar DOM, rede, console e traces. Aplico guardrails, privilégio mínimo e aprovação humana em ações sensíveis. As conclusões dependem dos testes executados e das evidências coletadas.</p>
+            <a class="intro-case-link" href="exp_pay2free.html#agentes">Ver prompts e camadas de execução</a>
+          </article>
+        </section>
+
+        <div class="career-highlights" id="realizacoes">
+          <h4>
+            <i class="fas fa-trophy" aria-hidden="true"></i> Principais Realizações de Carreira
           </h4>
           <div class="row">
             <div class="col-md-6">
-              <ul style="color: white; font-size: 1rem;">
+              <ul>
+                <li style="margin-bottom: 1rem;">
+                  <strong>Pay2Free / Estrela Bet · IA em identidade digital.</strong> Revalidei Grok 4.3 para OCR e documentoscopia e Gemma 3 para PAD no AWS Bedrock. Cruzei os resultados com Face Match, regras de identidade, MongoDB e feedback do usuário. <a class="project-detail-link" href="exp_pay2free.html#bedrock">Ver campanha</a>
+                </li>
+                <li style="margin-bottom: 1rem;">
+                  <strong>Pay2Free / Estrela Bet · Segurança de APIs e IA.</strong> Validei controles na criação e no processamento de pagamentos PIX e participei da investigação de prompt injection na documentoscopia com Serasa e Unico. A equipe encaminhou as evidências aos fornecedores. <a class="project-detail-link" href="exp_pay2free.html#seguranca">Ver atuação em segurança</a>
+                </li>
+                <li style="margin-bottom: 1rem;">
+                  <strong>Pay2Free / Estrela Bet · IA aplicada a QA.</strong> Estruturei oito subagentes Claude Code, Agent Skills, MCP Chrome DevTools e RAG local em SQLite/FTS5 para apoiar cenários e relatórios de execução. Usei runners Ruby, MongoDB e logs para comprovar estados de Cash-in, Cash-out e KYC. <a class="project-detail-link" href="exp_pay2free.html#agentes">Ver arquitetura</a>
+                </li>
                 <li style="margin-bottom: 1rem;">
                   <strong>Aplicativo #1 da Play Store</strong> por 2,5 semanas consecutivas com <strong>1+ milhão de usuários</strong> 
                   adquiridos (Claro Pay - Campanha "Indique e Ganhe", 2021)
@@ -845,7 +724,13 @@
               </ul>
             </div>
             <div class="col-md-6">
-              <ul style="color: white; font-size: 1rem;">
+              <ul>
+                <li style="margin-bottom: 1rem;">
+                  <strong>Miketec / Azul / Smiles · Pesquisa autoral em IA aplicada a QA.</strong> Experimentei Grok, Claude Code, Codex e Cline na leitura de histórias, contratos Web/API e análise de impacto. Explorei subagentes, MCP, Agent Skills e NVIDIA NIM como base do ferramental que evoluí na Pay2Free. <a class="project-detail-link" href="exp_miketec.html">Ver experiência</a>
+                </li>
+                <li style="margin-bottom: 1rem;">
+                  <strong>Claro Pay · Identidade digital e decisões de risco.</strong> Validei OCR e biometria no onboarding com Datavalid, BRScan e IDWall e acompanhei decisões antifraude MDD e autenticação 3DS na cadeia entre wallet, adquirente e core bancário. <a class="project-detail-link" href="exp_claropay.html">Ver experiência</a>
+                </li>
                 <li style="margin-bottom: 1rem;">
                   <strong>500K+ transações mensais com zero fraudes críticas</strong> em Wallet de Cartões com 
                   integração Cielo, validação MDD (Mastercard Decision Defender) e 3DS
@@ -863,6 +748,10 @@
           </div>
         </div>
 
+        <div class="portfolio-grid">
+          <article class="case-section"><h5>Pay2Free · PIX e identidade digital</h5><p>Criei runbooks de Cash-in e Cash-out, matrizes Banux e KYC e runners Ruby. Correlacionei eventos bancários, MongoDB, BackOffice e logs para investigar devoluções, conciliação e divergências de estado.</p><p>Revalidei OCR e prova de vida no AWS Bedrock e montei um fluxo de QA com oito subagentes Claude Code, Agent Skills e MCP Chrome DevTools.</p></article>
+          <article class="case-section"><h5>Tecsomobi · Mobilidade e automação</h5><p>Correlacionei PIX, pedido, token, AWS, SFTP e firmware para investigar recargas em validadores. Compartilhei consultas e runbooks com Suporte e Desenvolvimento.</p><p>Automatizei massa e OTP e evoluí o piloto mobile para um laboratório que usa screenshots e XML para apoiar cenários, seletores e Page Objects.</p></article>
+        </div>
         <p class="mb-4" style="font-size: 1.1rem; line-height: 1.8;">
           Atuação em <strong>ambientes com e sem requisitos formalizados</strong>, assumindo papel <strong>consultivo, analitico 
           e estratégico</strong> junto ao Produto, Operações, Compliance e Suporte, reduzindo <strong>riscos 
@@ -872,7 +761,7 @@
         <div class="row mt-4">
           <div class="col-md-3">
             <div class="metric-box">
-              <div class="metric-value">8+</div>
+              <div class="metric-value">9+</div>
               <div class="metric-label">Anos de Experiência</div>
             </div>
           </div>
@@ -946,6 +835,12 @@
           </div>
         </div>
 
+        <div class="portfolio-grid mt-4">
+          <article class="case-section"><h5>Identidade digital e IA no produto</h5><p>KYC/AML, OCR multimodal, documentoscopia, Liveness, PAD e Face Match. Grok 4.3 e Gemma 3 no AWS Bedrock. Integrações Unico, Serasa e motor próprio com fallback, cache, limiares de decisão e validação server-side.</p></article>
+          <article class="case-section"><h5>IA aplicada à engenharia de qualidade</h5><p>Claude Code, Codex, Cline, Copilot, Grok, Agent Skills, MCP, Ollama, Gemini e pesquisa com NVIDIA NIM. RAG em SQLite/FTS5, cache por hash e uso de DOM/XML e imagens para apoiar cenários, Page Objects e relatórios.</p></article>
+          <article class="case-section"><h5>AWS, bancos de dados e observabilidade</h5><p>Lambda, SQS, S3, CloudWatch Logs Insights, DynamoDB e Bedrock. PostgreSQL, SQL Server, MongoDB e SQLite embarcado. Correlação com Datadog, Kibana, Dozzle, Argo, ADB/logcat e firmware.</p></article>
+          <article class="case-section"><h5>Automação, mobilidade e segurança</h5><p>Ruby, RSpec, Python, JavaScript, Appium, Selenium, Capybara, Cucumber, HTTParty e Postman/Newman. Web, mobile, APIs e IoT com MQTT, NFC/RFID e SFTP. Avaliação autorizada de autenticação, autorização, proteção de dados e decisões de IA.</p></article>
+        </div>
         <div class="mt-5" style="background: #f8f9fa; padding: 2rem; border-radius: 10px; border-left: 5px solid var(--primary-color);">
           <h5 style="color: var(--dark-bg); margin-bottom: 1rem;">
             <i class="fas fa-lightbulb"></i> Abordagem de Qualidade
@@ -960,6 +855,23 @@
             Em cenários de baixa maturidade de documentação (sem BRD), atuo como ponte entre as necessidades do cliente e a equipe técnica, 
             traduzindo regras de negócio em especificações testáveis, garantindo o alinhamento de expectativas e reduzindo retrabalho.
           </p>
+          <ul class="mt-3 mb-0">
+            <li><strong>Refinamento.</strong> Transformo risco financeiro e operacional em NFRs, DoR/DoD e critérios de aceite.</li>
+            <li><strong>Desenho de testes.</strong> Aplico valores-limite, transições de estado, pairwise, exploração e regressão. Uso IA para propor cenários e reviso as sugestões à luz da regra de negócio.</li>
+            <li><strong>Evidência e decisão.</strong> Cruzo interface, contrato, banco e telemetria. Registro impacto e risco residual para UAT, CAB, Go/No-Go e produção assistida.</li>
+            <li><strong>Operação.</strong> Uso RCA, runbooks, War Rooms e repasse a Suporte N1/N2/N3 para preparar diagnóstico e reteste.</li>
+          </ul>
+          <h5 class="mt-4" id="abordagem-ia">Como aplico IA à engenharia de qualidade</h5>
+          <p>Parto da história, dos critérios de aceite e do material do fluxo. Dependendo do caso, entram contrato de API, logs, estado no banco, DOM ou XML e capturas de tela. A orquestração seleciona o contexto e direciona a tarefa para análise, desenho de teste, inspeção, verificação ou documentação.</p>
+          <ol class="mb-0">
+            <li><strong>RAG local e recuperação de contexto.</strong> Organizo o material em SQLite3 com FTS5 para busca textual e uso cache por hash para reaproveitar análises de conteúdo repetido. A busca semântica complementa esse desenho quando a história e a documentação usam vocabulários diferentes, buscando trechos pelo significado. O FTS5 é o mecanismo de busca textual implementado no pipeline descrito.</li>
+            <li><strong>Cascata de análise.</strong> Começo pela leitura determinística de XML, DOM ou dados estruturados. Aciono o modelo textual para interpretar a regra e o visual quando preciso entender a tela, o documento ou uma divergência na captura. O fluxo pode alternar entre provedores conforme a tarefa.</li>
+            <li><strong>Prompts e orquestração multiagente.</strong> Na Pay2Free, defini oito subagentes no Claude Code. Cada prompt descrevia quando o agente deveria atuar, quais fontes consultar, quais ferramentas podia usar e que saída entregar. Separei leitura e arquitetura, geração de cenários, navegação, verificação de execução e acompanhamento de Liveness.</li>
+            <li><strong>MCP e ferramentas.</strong> Uso MCP Chrome DevTools para consultar DOM, Network e Console durante a investigação. Jira e Notion entram na rastreabilidade de histórias, casos, execuções, defeitos e evidências.</li>
+            <li><strong>Execução determinística e revisão.</strong> Uso Ruby/RSpec, HTTParty, Selenium/CDP ou Appium conforme a camada. Para aprovar um resultado, confiro a saída com a API, a persistência, os eventos e o comportamento observado. Ações financeiras seguem as permissões do ambiente e passam por revisão humana.</li>
+            <li><strong>IA no produto.</strong> Valido o comportamento da IA ao longo da jornada. No AWS Bedrock, acompanhei OCR com Grok 4.3 e PAD com Gemma 3 e cruzei os resultados com Face Match, regras do backend, MongoDB e feedback da interface.</li>
+          </ol>
+          <p class="mt-3 mb-0"><a class="portfolio-button portfolio-button--secondary" href="exp_pay2free.html#agentes">Ver a arquitetura dos agentes na Pay2Free</a></p>
         </div>
       </div>
     </section>
@@ -970,12 +882,54 @@
     <section class="resume-section" id="projetos">
       <div class="section-content w-100">
         <h2>Projetos de Destaque</h2>
+        <article class="project-card" id="projeto-pay2free-kyc" style="background: linear-gradient(135deg, #21546b 0%, #453d83 100%);">
+          <h3><i class="fas fa-id-card" aria-hidden="true"></i> Pay2Free · KYC, documentoscopia e biometria facial</h3>
+          <div class="mb-3">
+            <span class="project-tag">Julho a novembro de 2026</span>
+            <span class="project-tag">AWS Bedrock</span>
+            <span class="project-tag">OCR · Liveness · PAD · Face Match</span>
+          </div>
+          <p>Qualidade end-to-end da jornada de identidade digital na Pay2Free / Estrela Bet / StelarGaming. Acompanhei da consulta cadastral e do consentimento até a decisão de onboarding persistida no MongoDB.</p>
+          <h5>Documentoscopia, captura e decisão:</h5>
+          <ul>
+            <li><strong>OCR multimodal no AWS Bedrock:</strong> validei classificação, frente e verso, extração de campos, validade, resolução e consistência cadastral, incluindo CNH, RG/CIN e passaporte. No reteste, o Grok 4.3 foi avaliado na documentoscopia.</li>
+            <li><strong>Biometria facial:</strong> revalidei o Gemma 3 no PAD, acompanhei prova de vida, qualidade da captura e comparação facial e conferi a coerência entre veredito, similaridade e estado persistido.</li>
+            <li><strong>Orquestração de fornecedores:</strong> avaliei Unico, Serasa e motor próprio, com seleção, prioridade, fallback, cache, reconsulta e indisponibilidade. Na consulta por CPF, investiguei divergências entre Hub, cache Liveness e fornecedor.</li>
+            <li><strong>Execução assistida por agentes:</strong> automatizei disparo, navegação e upload com Ruby/Selenium/CDP. O fluxo pausava para a selfie e a prova de vida. Depois da captura humana, a automação voltava a acompanhar a sessão e eu conferia a decisão no MongoDB. <a class="project-detail-link" href="exp_pay2free.html#execucao-assistida">Ver como funcionava</a></li>
+            <li><strong>UX e segurança de IA:</strong> comparei o motivo gravado com a orientação exibida, incluindo a mensagem de câmera na jornada de upload. Nos ensaios autorizados, documentei em qual camada ocorreu a rejeição e qual foi a decisão de identidade.</li>
+          </ul>
+          <div class="project-actions"><a class="portfolio-button portfolio-button--light" href="exp_pay2free.html#kyc">Ver jornada de KYC</a> <a class="portfolio-button portfolio-button--light" href="exp_pay2free.html#bedrock">Ver campanha AWS Bedrock</a></div>
+        </article>
 
+        <article class="project-card" id="projeto-pay2free-pix" style="background: linear-gradient(135deg, #1e5b53 0%, #304e70 100%);">
+          <h3><i class="fas fa-exchange-alt" aria-hidden="true"></i> Pay2Free · PIX Cash-in, Cash-out e BackOffice</h3>
+          <div class="mb-3">
+            <span class="project-tag">Julho a novembro de 2026</span>
+            <span class="project-tag">Banux / Pixer</span>
+            <span class="project-tag">MongoDB · CloudWatch · Datadog</span>
+          </div>
+          <p>Validei depósitos e saques desde a solicitação até os efeitos financeiros. Cruzei estados do BackOffice, contratos de API, eventos bancários, persistência e entrega de callbacks em sandbox.</p>
+          <h5>Contribuições e evidências:</h5>
+          <ul>
+            <li><strong>Cash-in:</strong> QR dinâmico, cadastro, idempotência, PIX cruzado, divergência de conta, listas restritivas e bloqueios cadastrais. Conferi a abertura da devolução e registrei a cobertura pendente para sua confirmação terminal.</li>
+            <li><strong>Cash-out:</strong> acompanhei saques em processamento e concluídos, conferi valores e dados bancários e registrei os pontos pendentes de reteste sobre chaves, limites, retentativas e conciliação.</li>
+            <li><strong>BackOffice:</strong> comparei regras de estabelecimento, limites, bloqueios e dados bancários com o que a API e o banco registraram.</li>
+            <li><strong>Automação:</strong> runners Ruby/HTTParty, plano editável de regressão Banux e runbooks de Cash-in e Cash-out com resultado esperado, observado e estado da evidência.</li>
+            <li><strong>Investigação:</strong> documentei um evento de depósito externo sem devolução registrada e uma limitação do simulador que bloqueava a conciliação manual.</li>
+          </ul>
+          <div class="project-actions"><a class="portfolio-button portfolio-button--light" href="exp_pay2free.html#pix">Ver Cash-in</a> <a class="portfolio-button portfolio-button--light" href="exp_pay2free.html#cashout">Ver Cash-out</a></div>
+        </article>
+        <div class="portfolio-grid">
+          <article class="case-section"><h3>Agentes e runners de QA</h3><p>Combinei Ruby/HTTParty, Claude Code, Agent Skills, MCP e RAG local para passar de histórias e contratos a casos rastreáveis, evidências e relatórios.</p><a class="portfolio-button portfolio-button--secondary" href="exp_pay2free.html#ia">Ver ferramental de QA</a></article>
+          <article class="case-section"><h3>Laboratório mobile Tecsomobi</h3><p>Usei Appium e UiAutomator2 para explorar telas, screenshots e XML na geração assistida, e SmartLocator, Ruby/RSpec, Notion e Allure para manutenção e execução.</p><a class="portfolio-button portfolio-button--secondary" href="exp_tecsomobi.html#tmobi-platform">Ver automação mobile</a></article>
+          <article class="case-section"><h3>POC de atendimento conversacional</h3><p>Pesquisei autoatendimento com Typebot e Amazon Connect, classificação de intenções, contexto, integrações serverless e passagem para atendimento humano.</p><a class="portfolio-button portfolio-button--secondary" href="exp_pay2free.html#pesquisa">Ver pesquisa e protótipos</a></article>
+        </div>
+        
         <!-- Vai Passe Fácil -->
         <div class="project-card" id="projeto-vai-passe">
           <h3><i class="fas fa-bus"></i> Aplicativo Vai Passe Fácil</h3>
           <div class="mb-3">
-            <span class="project-tag">Janeiro 2025 - Atual</span>
+            <span class="project-tag">A partir de janeiro de 2025</span>
             <span class="project-tag">Mobilidade Urbana</span>
             <span class="project-tag">ABT</span>
           </div>
@@ -1005,7 +959,7 @@
         <div class="project-card" id="projeto-orbi" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
           <h3><i class="fas fa-credit-card"></i> Plataforma Orbi - Modernização da Bilhetagem Digital</h3>
           <div class="mb-3">
-            <span class="project-tag">Outubro 2024 - Atual</span>
+            <span class="project-tag">Outubro de 2024 a abril de 2026</span>
             <span class="project-tag">Account-Based Ticketing (ABT)</span>
             <span class="project-tag">NFC/RFID</span>
             <span class="project-tag">OneCX/OneCore</span>
@@ -1300,10 +1254,14 @@
     <hr class="m-0">
     <hr class="m-0">
     <!-- Seção: QDD Framework -->
-    <section class="resume-section parallax-bg" id="qdd" style="background-image: url('img/bg-qdd.jpg');">
+    <section class="resume-section" id="qdd">
       <div class="section-overlay"></div>
       <div class="section-content w-100">
         <h2>Quality-Driven Development (QDD)</h2>
+        <figure class="qa-process">
+          <img src="img/processo-qa.png" width="1091" height="261" loading="lazy" alt="">
+          <figcaption>Ideia → Planejamento → Desenvolvimento → Testes → Homologação → Produção → Monitoramento.</figcaption>
+        </figure>
 
         <div class="qdd-highlight">
           <h4>O que é QDD?</h4>
@@ -1319,6 +1277,11 @@
         </div>
 
         <h4 class="mt-5">Aplicação Prática</h4>
+        <div class="portfolio-grid">
+          <article class="case-section"><h5>Pay2Free · Estados do PIX</h5><p>Defini evidência por etapa: resposta da API, evento bancário, regra de compliance, persistência e callback. Quando o simulador bloqueava um teste, registrei o reteste necessário.</p></article>
+          <article class="case-section"><h5>Tecsomobi · Entrega por praça</h5><p>Liguei regras locais a recarga, saldo, token e uso físico. Cruzei SQL, AWS, arquivos de sincronização e firmware para orientar regressão e Go/No-Go.</p></article>
+          <article class="case-section"><h5>MJV e Claro Pay · Risco bancário</h5><p>Levei regras de alçada, garantias e amortização para UAT. Na Claro Pay, acompanhei interoperabilidade PIX, adquirência e saque Banco24Horas até homologação e produção assistida.</p></article>
+        </div>
         <div class="row">
           <div class="col-md-6">
             <div class="pipeline-step">
@@ -1397,13 +1360,7 @@
 
         <!-- Botão para Documento QDD Completo -->
         <div style="text-align: center; margin: 3rem 0;">
-          <a href="qdd-framework.html" target="_blank"
-             style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                    color: white; padding: 15px 40px; border-radius: 30px; text-decoration: none; 
-                    font-weight: bold; font-size: 1.1rem; transition: transform 0.3s ease, box-shadow 0.3s ease;
-                    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);"
-             onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(102, 126, 234, 0.6)';"
-             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.4)';">
+          <a href="qdd-framework.html" class="portfolio-button">
             <i class="fas fa-book-open"></i> Ver Framework Completo do QDD
           </a>
           <p style="margin-top: 1rem; font-size: 0.95rem; color: #666;">
@@ -1429,13 +1386,77 @@
     <hr class="m-0">
 
     <!-- Seção: Experiência -->
-    <section class="resume-section parallax-bg" id="experiencia" style="background-image: url('img/bg-experience.jpg');">
+    <section class="resume-section" id="experiencia">
       <div class="section-overlay"></div>
       <div class="section-content w-100">
         <h2>Experiência Profissional</h2>
 
+        <article class="experience-card" id="pay2free">
+          <div class="company-logo-container">
+            <i class="fas fa-exchange-alt company-logo-placeholder" aria-hidden="true"></i>
+          </div>
+          <div class="experience-content">
+            <h3>Senior Quality Engineer / SDET</h3>
+            <div class="company-name">Tecla T · Pay2Free / Estrela Bet / StelarGaming</div>
+            <div class="experience-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> Julho a novembro de 2026</div>
+            <p>Atuei na qualidade de pagamentos PIX e identidade digital, cruzando o que aparecia na interface com eventos bancários, decisões de compliance e registros no banco.</p>
+            <div class="experience-highlights">
+              <h5><i class="fas fa-star" aria-hidden="true"></i> Principais Realizações</h5>
+              <ul>
+              <li><strong>PIX e compliance.</strong> Estruturei runbooks de depósitos e saques e documentei divergências e limites do simulador. No saque, acompanhei a elegibilidade por cadastro e biometria, a consulta da chave e do recebedor e a conciliação entre parceiro, conta bancária, MongoDB e callback. <a href="exp_pay2free.html#integracoes-bancarias">Ver integrações bancárias</a></li>
+              <li><strong>KYC e biometria.</strong> Validei CNH, RG/CIN e passaporte, integrei a análise de Unico, Serasa e motor próprio e acompanhei prova de vida e limiar de Face Match. O saque exigia verificação facial.</li>
+              <li><strong>Segurança cibernética.</strong> Validei autorização, integridade de dados, limites e efeitos assíncronos nas APIs PIX. Em documentoscopia, participei da investigação de prompt injection nas integrações Serasa e Unico, com evidências encaminhadas aos fornecedores. <a href="exp_pay2free.html#seguranca">Ver atuação em segurança</a></li>
+              <li><strong>IA em QA.</strong> Usei agentes para apoiar a geração de cenários e a análise de evidências. No produto, retestei controles de OCR e prova de vida após a troca de modelos no AWS Bedrock.</li>
+              </ul>
+            </div>
+            <p>O escopo incluiu planos editáveis Banux e KYC, controle de estados e devoluções, seleção de fornecedores e investigação de caches. Usei Selenium/CDP no onboarding e acesso de leitura ao MongoDB, CloudWatch e Datadog na comprovação dos estados. Entre os achados, documentei devolução iniciada por divergência de conta, falha de entrega de callback e inconsistência entre o valor de um saque concluído e o evento bancário.</p>
+            <p>Na IA do produto, avaliei Grok 4.3 e Gemma 3 no AWS Bedrock. Na engenharia de testes, estruturei agentes com Claude Code, MCP e RAG local para apoiar análise, cenários e relatórios vinculados à execução.</p>
+            <div class="experience-detail">
+              <a href="exp_pay2free.html" class="portfolio-button"><i class="fas fa-arrow-right" aria-hidden="true"></i> Ver Análise Técnica Completa</a>
+            </div>
+            <div class="mt-4">
+              <span class="skill-badge">PIX Banux/Pixer</span>
+              <span class="skill-badge">AWS Bedrock</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">CloudWatch / Datadog</span>
+              <span class="skill-badge">Ruby / Selenium CDP</span>
+              <span class="skill-badge">Claude Code / MCP / RAG</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-card" id="miketec">
+          <div class="company-logo-container"><i class="fas fa-plane company-logo-placeholder" aria-hidden="true"></i></div>
+          <div class="experience-content">
+            <h3>Analista QA Sênior</h3>
+            <div class="company-name">Miketec · Azul / Smiles</div>
+            <div class="experience-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> Maio a julho de 2026 · Híbrido, SP</div>
+            <p>Atuei na qualidade de <strong>operações administrativas, aplicações Web e integrações REST</strong> nas frentes Azul e Smiles. Acompanhei o trabalho do discovery e refinamento à estratégia de homologação, execução, investigação de defeitos e reteste com Desenvolvimento.</p>
+            <div class="experience-highlights">
+              <h5><i class="fas fa-star" aria-hidden="true"></i> Principais Realizações</h5>
+              <ul>
+                <li><strong>Estratégia de homologação.</strong> Reconstruí jornadas e regras de negócio, mapeei riscos e defini critérios de aceite. Planejei cobertura funcional, exploratória, negativa, de valores-limite, integração e regressão.</li>
+                <li><strong>BackOffice e APIs REST.</strong> Validei campos, permissões, estados, autenticação, contratos JSON e códigos HTTP. Cruzei interface, respostas de API e dados persistidos usando Postman, Ruby/RSpec/HTTParty e SQL.</li>
+                <li><strong>Investigação e reteste.</strong> Reproduzi inconsistências entre Web e backend, registrei evidências e acompanhei a verificação das correções com Desenvolvimento.</li>
+                <li><strong>Pesquisa autoral em IA.</strong> Experimentei Grok, Claude Code, Codex e Cline na leitura de PRDs, histórias, código e contratos para apoiar cobertura, análise de impacto, depuração e automação.</li>
+                <li><strong>Pesquisa multiagente.</strong> Explorei especialização de agentes para requisitos, Web/API, revisão e evidências, com MCP, Agent Skills e NVIDIA NIM. Esse trabalho serviu de base para o ferramental posterior na Pay2Free.</li>
+              </ul>
+            </div>
+            <div class="experience-detail">
+              <a href="exp_miketec.html" class="portfolio-button"><i class="fas fa-arrow-right" aria-hidden="true"></i> Ver Análise Técnica Completa</a>
+            </div>
+            <div class="mt-4">
+              <span class="skill-badge">BackOffice / REST</span>
+              <span class="skill-badge">Ruby / RSpec / HTTParty</span>
+              <span class="skill-badge">Postman / SQL</span>
+              <span class="skill-badge">Claude Code / Codex / Cline</span>
+              <span class="skill-badge">Grok / NVIDIA NIM</span>
+            </div>
+          </div>
+        </article>
+
                 <!-- TECSOMOBI / AUTOPASS -->
-        <div class="experience-card">
+        <div class="experience-card" id="experiencia-tecsomobi">
           <div class="company-logo-container">
             <i class="fas fa-building company-logo-placeholder"></i>
           </div>
@@ -1443,13 +1464,15 @@
             <h3>QA Engineer Sênior - Quality Architect</h3>
             <div class="company-name">TECSOMOBI - AUTOPASS (Plataforma Omnichannel de Transporte Público)</div>
             <div class="experience-date">
-              <i class="far fa-calendar-alt"></i> Outubro 2024 - Atual | Presencial (São Paulo, SP)
+              <i class="far fa-calendar-alt"></i> Outubro de 2024 a abril de 2026 · Presencial, SP
             </div>
             
             <p style="font-size: 1.05rem; line-height: 1.8;">
               Responsável pela <strong>qualidade end-to-end</strong> de plataforma omnichannel de transporte público integrando <strong>app móvel Android/iOS (OneCX/OneCore), WhatsApp Business, backend financeiro e validadores físicos (ABT/catracas)</strong>. Atuação estratégica em <strong>go-live de novas praças/cidades</strong> garantindo estabilidade operacional e conformidade financeira. Validação completa de fluxos críticos: <strong>PIX → Recarga Carteira → Validador → Cartão ABT</strong> com testes em hardware real.
             </p>
 
+            <p>Em Orbi/TMOB, acompanhei aplicativos white-label, requisitos por praça, wallet ABT e rollout. Validei a cadeia cloud-to-edge com AWS Lambda/SQS/S3, PostgreSQL, MQTT, SFTP e SQLite embarcado, incluindo sincronização offline e logs de firmware via ADB/logcat.</p>
+            <p>Usei Claude Code, Codex e modelos multimodais para propor cenários, locators e Page Objects a partir de XML e screenshots. Estruturei suporte a PT/ES/EN e rastreabilidade no Notion, com execução em Ruby/RSpec e Appium.</p>
             <!-- HIGHLIGHTS BOX -->
             <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; 
                  border-left: 4px solid #BD5D38; margin: 1.5rem 0;">
@@ -1470,14 +1493,8 @@
             </div>
 
             <!-- BOTÃO DE DETALHES -->
-            <div style="text-align: center; margin-top: 2rem;">
-              <a href="exp_tecsomobi.html" 
-                 style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                        color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; 
-                        font-weight: bold; transition: transform 0.3s ease, box-shadow 0.3s ease;
-                        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);"
-                 onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.6)';"
-                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.4)';">
+            <div class="experience-detail">
+              <a href="exp_tecsomobi.html" class="portfolio-button">
                 <i class="fas fa-arrow-right"></i> Ver Análise Técnica Completa
               </a>
             </div>
@@ -1501,7 +1518,7 @@
 >
 
                 <!-- MJV / Mercedes-Benz -->
-        <div class="experience-card">
+        <div class="experience-card" id="experiencia-mjv">
           <div class="company-logo-container">
             <i class="fas fa-car company-logo-placeholder"></i>
           </div>
@@ -1515,6 +1532,7 @@
             <p style="font-size: 1.05rem; line-height: 1.8;">
               <strong>Sistema:</strong> Floor Plan - Crédito automotivo e financiamento de estoque para concessionárias (B2B). Atuação em sistema financeiro crítico para cadeia de fornecimento automotivo, envolvendo <strong>análise de crédito, gestão de garantias e cobrança</strong> com conformidade regulatória do Banco Central.
             </p>
+            <p>Validei Saque com Reposição, assunção de risco, renegociação e My Stock, incluindo elegibilidade, limites por garantia/VIN, alçadas, amortização SAC/Price/Bullet, pagamentos parciais e conciliação CNAB/SCR. Trabalhei com Negócio no refinamento e na UAT, com rastreabilidade de requisitos, cenários e evidências em Jira/Xray.</p>
 
             <!-- HIGHLIGHTS BOX -->
             <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; 
@@ -1533,14 +1551,8 @@
             </div>
 
             <!-- BOTÃO DE DETALHES -->
-            <div style="text-align: center; margin-top: 2rem;">
-              <a href="exp_mjv.html" 
-                 style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                        color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; 
-                        font-weight: bold; transition: transform 0.3s ease, box-shadow 0.3s ease;
-                        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);"
-                 onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.6)';"
-                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.4)';">
+            <div class="experience-detail">
+              <a href="exp_mjv.html" class="portfolio-button">
                 <i class="fas fa-arrow-right"></i> Ver Análise Técnica Completa
               </a>
             </div>
@@ -1561,7 +1573,7 @@
 >
 
                 <!-- Global Hitss / Claro Pay -->
-        <div class="experience-card">
+        <div class="experience-card" id="experiencia-claro-pay">
           <div class="company-logo-container">
             <i class="fas fa-mobile-alt company-logo-placeholder"></i>
           </div>
@@ -1575,6 +1587,8 @@
             <p style="font-size: 1.05rem; line-height: 1.8;">
               Atuação em <strong>fintech regulada</strong> durante fase de crescimento acelerado, responsável por validação técnica de <strong>integrações bancárias críticas</strong> (PIX, saque ATM, onboarding KYC) e garantia de conformidade regulatória com Banco Central.
             </p>
+            <p>Validei interoperabilidade SPI/DICT e portabilidade de chaves com Matera, saque digital TECBAN/Banco24Horas, onboarding com Datavalid/BRScan/IDWall e wallet Cielo/Rede com MDD e 3DS. Em incidentes, acompanhei transações pelo CloudWatch Logs Insights e DynamoDB, cruzando eventos, estados e retornos de parceiros.</p>
+            <p>Participei de CAB, Go/No-Go, produção assistida e mentoria cross-squad. A automação Ruby/Appium e os testes de carga JMeter apoiaram a regressão de conta digital e jornadas de campanha.</p>
 
             <!-- HIGHLIGHTS BOX -->
             <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; 
@@ -1593,14 +1607,8 @@
             </div>
 
             <!-- BOTÃO DE DETALHES -->
-            <div style="text-align: center; margin-top: 2rem;">
-              <a href="exp_claropay.html" 
-                 style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                        color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; 
-                        font-weight: bold; transition: transform 0.3s ease, box-shadow 0.3s ease;
-                        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);"
-                 onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.6)';"
-                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.4)';">
+            <div class="experience-detail">
+              <a href="exp_claropay.html" class="portfolio-button">
                 <i class="fas fa-arrow-right"></i> Ver Análise Técnica Completa
               </a>
             </div>
@@ -1623,7 +1631,7 @@
 >
 
                 <!-- Alterdata -->
-        <div class="experience-card">
+        <div class="experience-card" id="experiencia-alterdata">
           <div class="company-logo-container">
             <i class="fas fa-cogs company-logo-placeholder"></i>
           </div>
@@ -1637,6 +1645,7 @@
             <p style="font-size: 1.05rem; line-height: 1.8;">
               <strong>Projeto:</strong> BimerUp - Sistema ERP completo para gestão empresarial (Finanças, Estoque, Vendas, Compras, Fiscal, Contábil). Arquitetura de microserviços com APIs RESTful.
             </p>
+            <p>Modelei cenários por particionamento, valores-limite e tabelas de decisão, verificando contratos e schemas de API com Postman e Ruby/HTTParty. Registrei o comportamento esperado e a resposta observada para sustentar investigação, regressão e reteste.</p>
 
             <!-- HIGHLIGHTS BOX -->
             <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; 
@@ -1655,14 +1664,8 @@
             </div>
 
             <!-- BOTÃO DE DETALHES -->
-            <div style="text-align: center; margin-top: 2rem;">
-              <a href="exp_alterdata.html" 
-                 style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                        color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; 
-                        font-weight: bold; transition: transform 0.3s ease, box-shadow 0.3s ease;
-                        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);"
-                 onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.6)';"
-                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.4)';">
+            <div class="experience-detail">
+              <a href="exp_alterdata.html" class="portfolio-button">
                 <i class="fas fa-arrow-right"></i> Ver Análise Técnica Completa
               </a>
             </div>
@@ -1689,136 +1692,146 @@
     <!-- Seção: Automação E2E -->
     <section class="resume-section" id="automacao">
       <div class="section-content w-100">
-        <h2>Pipeline de Identidade Dinâmica: Automação E2E</h2>
+        <h2>Laboratório de Automação Mobile</h2>
 
-        <div class="alert alert-info">
+        <div class="alert alert-success">
           <i class="fas fa-info-circle"></i> 
-          <strong>Status:</strong> 🚧 Em Construção | 
-          <strong>Fase Atual:</strong> Integração de APIs | 
-          <strong>Próxima Fase:</strong> Automação de Front-end
+          <strong>Origem:</strong> Piloto iniciado no contexto da TECSOMOBI | 
+          <strong>Evolução:</strong> Estruturado e expandido como projeto independente | 
+          <strong>Stack:</strong> Ruby, Appium, RSpec, Allure, APIs de IA
         </div>
 
-        <h4>Objetivo Estratégico</h4>
+        <h4>Visão Geral</h4>
         <p>
-          Resolver o maior gargalo dos testes de QA: a <strong>dependência de massa de dados 
-          pré-existente</strong>. Muitas vezes, testes falham porque um usuário já foi usado ou o 
-          CPF já está cadastrado. Nossa solução cria um usuário "virgem", valida-o através de APIs 
-          de terceiros e entrega uma <strong>sessão autenticada em segundos</strong>.
+          Este case nasceu como <strong>iniciativa piloto</strong> durante minha atuação com automação e qualidade mobile,
+          e depois foi continuado por conta própria como um <strong>laboratório de arquitetura de testes</strong>.
+          O foco passou a ser consolidar, em um único projeto, capacidades de <strong>automação Android, geração de casos por IA,
+          sincronização com Notion, testes de carga e observabilidade</strong>.
         </p>
 
-        <h4 class="mt-5">Arquitetura do Pipeline</h4>
+        <h4 class="mt-5">Do Piloto ao Projeto Estruturado</h4>
 
         <div class="pipeline-step">
-          <h5>ETAPA 1: API de Registro</h5>
-          <p><strong>Endpoint:</strong> <code>/auth/register</code></p>
-          <p>O processo nasce aqui. O objetivo é registrar um usuário funcional no banco de dados.</p>
-          
-          <h6>Motor de Dados (Pre-request Script):</h6>
+          <h5>Problema Inicial</h5>
+          <p>
+            O ponto de partida foi um problema recorrente de QA: a <strong>dependência de massa de dados e validações manuais</strong>
+            para liberar fluxos mobile críticos. A proposta inicial era acelerar cadastro, validação OTP e login sem depender de preparação externa.
+          </p>
           <ul>
-            <li><strong>Identidade Única (Contador):</strong> Script lê contador global, soma +1 e 
-            salva. Garante que e-mail e nome nunca se repitam</li>
-            <li><strong>Validação de CPF Real:</strong> Executa lógica matemática de verificação 
-            que calcula os dígitos finais. Não é gerador aleatório, é fórmula que garante que o 
-            backend reconheça o documento como legítimo</li>
+            <li>Criação de usuários únicos com regras válidas de documento e e-mail</li>
+            <li>Leitura automática de OTP via integração com Mailsac</li>
+            <li>Entrega de sessão autenticada para reutilização em outros cenários</li>
           </ul>
+        </div>
 
-          <div class="code-snippet">
-sequentialName: "Teste QA " + Contador → "Teste QA 02"
-email: "testeqa" + Contador + "@mailsac.com" → "<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e99d8c9a9d8c9888d9dba9848880859a888ac78a8684">[email&#160;protected]</a>"
-cpf: Matemática de Validação Real → "123.456.789-01"
-password: Padrão de Teste → "123456789"
+        <h4 class="mt-5">Arquitetura da Plataforma</h4>
+
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="pipeline-step h-100">
+              <h5><i class="fas fa-mobile-alt"></i> Testes E2E</h5>
+              <p>Execução Android com <strong>Ruby + RSpec + Appium</strong>, Page Objects, Smart Locator e evidências automatizadas.</p>
+              <ul>
+                <li>Cadastro com OTP via e-mail real</li>
+                <li>Login e cenários negativos</li>
+                <li>Cartões, carteira digital e configurações</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="pipeline-step h-100">
+              <h5><i class="fas fa-brain"></i> Geração por IA</h5>
+              <p>Capturas de tela dão contexto ao modelo para propor casos em CSV. O Notion mantém o vínculo por CT-ID, e o Appium registra os resultados da execução.</p>
+              <ul>
+                <li>Casos estruturados em CSV com CT-ID</li>
+                <li>Fallback entre provedores de IA</li>
+                <li>Upsert automatizado no Notion</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="pipeline-step h-100">
+              <h5><i class="fas fa-chart-line"></i> Gestão & Observabilidade</h5>
+              <p>Execuções, bugs e métricas rastreados ponta a ponta com notificações proativas.</p>
+              <ul>
+                <li>Dashboard e bug reports no Notion</li>
+                <li>Allure Reports para análise técnica</li>
+                <li>Alertas por e-mail e WhatsApp</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div class="pipeline-step">
-          <h5>ETAPA 2: Triangulação de E-mail (Mailsac API)</h5>
-          <p>Após o registro, o usuário está no banco mas <strong>bloqueado</strong>. Precisamos 
-          do código de 6 dígitos enviado por e-mail para desbloqueio.</p>
-          
-          <h6>Passo 1: Localizando a Mensagem</h6>
-          <p><code>GET /addresses/{email}/messages</code></p>
+          <h5>Fluxos Cobertos</h5>
+          <p>A automação foi desenhada para manter cobertura sobre jornadas críticas de negócio e cenários de regressão.</p>
           <ul>
-            <li>Automação faz GET na API do Mailsac</li>
-            <li>Script lê lista de mensagens e pega o <strong>ID da primeira</strong> (mais nova)</li>
-            <li>Salva ID na variável <code>{{last_message_id}}</code></li>
-          </ul>
-
-          <h6>Passo 2: Capturando o Código (Regex)</h6>
-          <p><code>GET /messages/{message_id}</code></p>
-          <ul>
-            <li>Segundo GET para ler conteúdo interno do e-mail</li>
-            <li><strong>Filtro Inteligente (Regex):</strong> <code>/\d{6}/</code> ignora palavras 
-            e foca apenas em sequência de 6 números</li>
-            <li>Código capturado e salvo em <code>{{validation_code}}</code></li>
+            <li><strong>Cadastro:</strong> fluxo completo com validação OTP e criação de usuários válidos.</li>
+            <li><strong>Home e Login:</strong> autenticação, sessão e validação de estados iniciais.</li>
+            <li><strong>Cartões:</strong> listagem, detalhe, extrato e adição de novos cartões.</li>
+            <li><strong>Carteira Digital:</strong> saldo, recarga e histórico de transações.</li>
+            <li><strong>Configurações:</strong> preferências, perfil e consistência pós-alteração.</li>
           </ul>
         </div>
 
         <div class="pipeline-step">
-          <h5>ETAPA 3: UPDATE CODE API</h5>
-          <p><strong>Endpoint:</strong> <code>/auth/update-code?email={email}&code={code}</code></p>
-          <p>
-            Automação possui ID do usuário (do Registro) e código (do E-mail). Chama API de Update 
-            enviando esses dados.
-          </p>
-          <p>
-            <strong>O que acontece:</strong> Servidor valida código e altera status do usuário para 
-            "False" no campo <code>au_is_blocked</code> na tabela <code>tmobapp.app_users</code>. 
-            Sem isso, usuário existe mas não consegue logar.
-          </p>
-        </div>
-
-        <div class="pipeline-step">
-          <h5>ETAPA 4: Login API</h5>
-          <p><strong>Endpoint:</strong> <code>/auth/login</code></p>
-          <p>O ciclo termina com POST Login usando e-mail e senha gerados no início.</p>
+          <h5>Capacidades que Diferenciam o Projeto</h5>
           <ul>
-            <li><strong>Sucesso:</strong> Servidor retorna <strong>Token JWT</strong></li>
-            <li><strong>Importância:</strong> Este token é a prova de que todo o fluxo funcionou. 
-            Agora, qualquer outra API de teste pode usar esse <code>{{auth_token}}</code> para 
-            realizar compras, editar perfis, etc.</li>
+            <li><strong>Smart Locator:</strong> estratégia híbrida com priorização por resource-id, análise de XML, região de tela e cache por tela.</li>
+            <li><strong>Crawler autônomo:</strong> descoberta de novas telas por hash de XML, evitando loops e alimentando o pipeline de IA.</li>
+            <li><strong>Integração Notion:</strong> sincronização de casos, execuções, bugs e dashboards com rastreabilidade por CT-ID.</li>
+            <li><strong>Testes de carga:</strong> runner Ruby para cenários de cadastro e login com OTP automatizado.</li>
+            <li><strong>Notificações:</strong> falhas enviadas em tempo real por SMTP e WhatsApp via Evolution API.</li>
           </ul>
         </div>
 
-        <h4 class="mt-5">Por que "Pipeline de Identidade"?</h4>
+        <div class="pipeline-step">
+          <h5>Pipeline Base que Originou a Evolução</h5>
+          <p>Antes da expansão da plataforma, a fundação técnica já resolvia a jornada de identidade dinâmica ponta a ponta.</p>
+          <ul>
+            <li><strong>Registro:</strong> criação automatizada de usuário com identidade única e CPF válido.</li>
+            <li><strong>Triangulação de e-mail:</strong> consulta à inbox e extração do código OTP por regex.</li>
+            <li><strong>Desbloqueio:</strong> atualização do status do usuário para permitir autenticação real.</li>
+            <li><strong>Login:</strong> obtenção de token/sessão para reaproveitamento em APIs e jornadas mobile.</li>
+          </ul>
+        </div>
+
+        <h4 class="mt-5">Impacto Técnico</h4>
         <div class="row">
           <div class="col-md-4">
             <div class="pipeline-step">
               <h5><i class="fas fa-tachometer-alt"></i> Velocidade</h5>
-              <p>Cria contas em <strong>8 segundos</strong> (antes: 2-4 minutos)</p>
+              <p>Preparação de massa e execução E2E aceleradas com automações que reduziram setup de <strong>2-4 minutos para 8 segundos</strong>.</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="pipeline-step">
-              <h5><i class="fas fa-user-shield"></i> Independência</h5>
-              <p>Não precisamos pedir massa de dados para o time de banco de dados</p>
+              <h5><i class="fas fa-sitemap"></i> Escalabilidade</h5>
+              <p>Arquitetura separada por camadas, com suporte a múltiplos providers de IA e expansão contínua do catálogo de telas.</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="pipeline-step">
-              <h5><i class="fas fa-laptop-code"></i> Preparação Front-end</h5>
-              <p>Próximo passo: integrar com Selenium/Appium/Ruby para testes já com usuário ativo</p>
+              <h5><i class="fas fa-bullseye"></i> Observabilidade</h5>
+              <p>Resultados, bugs e métricas centralizados em dashboards e relatórios acionáveis para QA e engenharia.</p>
             </div>
           </div>
         </div>
 
         <div class="mt-5">
-          <h4>Jornada de Escolha da Ferramenta (R&D)</h4>
-          <p>Não chegamos ao <strong>Mailsac</strong> por acaso. Testamos principais soluções do mercado:</p>
+          <h4>Stack Principal</h4>
           <ul>
-            <li><strong>Mail7 & Guerrilla Mail:</strong> Descartados por instabilidade nos domínios 
-            e bloqueios frequentes</li>
-            <li><strong>Mailtrap:</strong> Excelente interface, mas limitações de custo/benefício 
-            para volume de testes</li>
-            <li><strong>Mailslurp:</strong> Robusto, porém configuração excessivamente complexa</li>
-            <li><strong>Mailsac (Escolhida):</strong> API REST direta, consulta caixas de entrada 
-            dinâmicas sem criar conta no painel. Encadeamento direto e veloz - ciclo completo em segundos</li>
+            <li><strong>Linguagem e testes:</strong> Ruby 3.2.x, RSpec, Appium 2.x, Selenium WebDriver e Allure.</li>
+            <li><strong>IA:</strong> Claude como provider principal, com fallback para OpenAI, Gemini e execução local via Ollama.</li>
+            <li><strong>Integrações:</strong> Notion API, Mailsac, SMTP e Evolution API.</li>
+            <li><strong>Execução:</strong> Android com UiAutomator2, emulador ou dispositivo físico.</li>
           </ul>
         </div>
 
         <div class="mt-4">
-          <a href="https://github.com/franciscocarvalho-prog/Automacao_app_livra" target="_blank" 
-             class="btn btn-primary btn-lg">
-            <i class="fab fa-github"></i> Ver Repositório no GitHub
+          <a href="exp_tecsomobi.html#tmobi-platform"
+             class="portfolio-button">
+            <i class="fas fa-layer-group"></i> Ver Contexto e Evolução do Case
           </a>
         </div>
       </div>
@@ -1832,6 +1845,11 @@ password: Padrão de Teste → "123456789"
     <section class="resume-section" id="skills">
       <div class="section-content w-100">
         <h2>Stack Técnica & Habilidades</h2>
+        <div class="portfolio-grid">
+          <article class="case-section"><h5>IA em QA</h5><p>Claude Code, Codex, Grok, Cline, Copilot, Agent Skills, MCP Chrome DevTools, SQLite/FTS5, Ollama, Gemini, OpenAI e SmartLocator.</p></article>
+          <article class="case-section"><h5>IA em produto e identidade</h5><p>AWS Bedrock, Grok 4.3, Gemma 3, OCR multimodal, documentoscopia, PAD, Liveness, Face Match, Unico e Serasa.</p></article>
+          <article class="case-section"><h5>Cloud-to-edge e diagnóstico</h5><p>Lambda, SQS, S3, CloudWatch Logs Insights, DynamoDB, Datadog, Argo, MongoDB, PostgreSQL, SQL Server, SQLite, MQTT, SFTP e ADB/logcat.</p></article>
+        </div>
 
         <div class="row">
           <div class="col-md-6 mb-4">
@@ -1948,7 +1966,7 @@ password: Padrão de Teste → "123456789"
           <!-- COLUNA 1 -->
           <div class="col-md-6">
             
-            <div class="cert-card" onclick="openCertModal('cert1')">
+            <div class="cert-card" role="button" tabindex="0" aria-haspopup="dialog" data-certificate="cert1">
               <div class="cert-title">Teste de Software: Seja um Expert</div>
               <div class="cert-issuer">Udemy - Janeiro 2026</div>
               <p>Níveis de Teste, Técnicas de Design de Teste, Tipos de Teste</p>
@@ -1957,7 +1975,7 @@ password: Padrão de Teste → "123456789"
               </div>
             </div>
 
-            <div class="cert-card" onclick="openCertModal('cert2')">
+            <div class="cert-card" role="button" tabindex="0" aria-haspopup="dialog" data-certificate="cert2">
               <div class="cert-title">Mobile Automation Appium Cucumber</div>
               <div class="cert-issuer">Udemy - Março 2025</div>
               <p>Android & iOS + Jenkins, Desenvolvimento de frameworks de teste, Gherkin, XML</p>
@@ -1966,7 +1984,7 @@ password: Padrão de Teste → "123456789"
               </div>
             </div>
 
-            <div class="cert-card" onclick="openCertModal('cert3')">
+            <div class="cert-card" role="button" tabindex="0" aria-haspopup="dialog" data-certificate="cert3">
               <div class="cert-title">Automação de testes de API com Postman</div>
               <div class="cert-issuer">Udemy - Março 2025</div>
               <p>Scripts JavaScript, Gestão de Ambientes, Encadeamento de Requisições</p>
@@ -1975,7 +1993,7 @@ password: Padrão de Teste → "123456789"
               </div>
             </div>
 
-            <div class="cert-card" onclick="openCertModal('cert4')">
+            <div class="cert-card" role="button" tabindex="0" aria-haspopup="dialog" data-certificate="cert4">
               <div class="cert-title">JMeter - Testes de Performance</div>
               <div class="cert-issuer">Udemy - Março 2025</div>
               <p>Simulação de Carga e Estresse, Latência, Throughput, API em Escala</p>
@@ -1989,7 +2007,7 @@ password: Padrão de Teste → "123456789"
           <!-- COLUNA 2 -->
           <div class="col-md-6">
             
-            <div class="cert-card" onclick="openCertModal('cert5')">
+            <div class="cert-card" role="button" tabindex="0" aria-haspopup="dialog" data-certificate="cert5">
               <div class="cert-title">Agile QA Planning</div>
               <div class="cert-issuer">Udemy - Janeiro 2025</div>
               <p>Colaboração Multidisciplinar, Adaptação, Planejamento de testes</p>
@@ -1998,7 +2016,7 @@ password: Padrão de Teste → "123456789"
               </div>
             </div>
 
-            <div class="cert-card" onclick="openCertModal('cert6')">
+            <div class="cert-card" role="button" tabindex="0" aria-haspopup="dialog" data-certificate="cert6">
               <div class="cert-title">Ruby: Desbloqueie o medo de Codar</div>
               <div class="cert-issuer">QA Ninja </div>
               <p>Ruby, OO, Test-Driven Development (TDD), BDD, Refatoração</p>
@@ -2007,12 +2025,25 @@ password: Padrão de Teste → "123456789"
               </div>
             </div>
 
-            <div class="cert-card ongoing" onclick="openCertModal('cert7')">
+            <div class="cert-card ongoing" role="button" tabindex="0" aria-haspopup="dialog" data-certificate="cert7">
               <div class="cert-title">Threat Intelligence</div>
               <div class="cert-issuer">Academia de Forense Digital - Em Andamento</div>
               <div class="cert-view-icon">
                 <i class="fas fa-hourglass-half"></i>
               </div>
+            </div>
+            <div class="cert-card ongoing">
+              <div class="cert-title">Cyber Security · Universidade Hacker</div>
+              <div class="cert-issuer">Rafael Souza · Estudos em andamento</div>
+            </div>
+            <div class="cert-card ongoing">
+              <div class="cert-title">CEH v13 AI</div>
+              <div class="cert-issuer">Preparação para a certificação em andamento</div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-title">Introdução ao Banco de Dados MySQL</div>
+              <div class="cert-issuer">Curso concluído em janeiro de 2026</div>
+              <a class="portfolio-button portfolio-button--secondary" href="img/certificates/Introdu%C3%A7%C3%A3o%20ao%20banco%20de%20dados.pdf">Ver comprovante</a>
             </div>
 
           </div>
@@ -2084,7 +2115,13 @@ password: Padrão de Teste → "123456789"
             <div class="col-md-6">
               <div class="cert-card">
                 <div class="cert-title">Inglês</div>
-                <p><strong>Técnico</strong> - Leitura e escrita para documentação técnica</p>
+                <p><strong>Conversação intermediária</strong> · Leitura e escrita para documentação técnica</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="cert-card">
+                <div class="cert-title">Espanhol</div>
+                <p><strong>Básico</strong></p>
               </div>
             </div>
           </div>
@@ -2097,9 +2134,9 @@ password: Padrão de Teste → "123456789"
         
     </div>    
       <!-- MODAL DE CERTIFICADOS -->
-    <div id="certModal" class="cert-modal" onclick="closeCertModal()">
+    <div id="certModal" class="cert-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="closeCertModal()">
       <div class="modal-content-wrapper" onclick="event.stopPropagation()">
-        <button class="modal-close" onclick="closeCertModal()">
+        <button type="button" class="modal-close portfolio-icon-button" aria-label="Fechar certificado" onclick="closeCertModal()">
           <i class="fas fa-times"></i>
         </button>
         
@@ -2115,87 +2152,10 @@ password: Padrão de Teste → "123456789"
   <!-- Fim Main Wrapper -->
 
   <!-- Bootstrap JS -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Smooth Scroll Script -->
-  <script>
-    // Smooth scroll para links de navegação
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-          
-          // Fechar navbar mobile após click
-          const navbarCollapse = document.querySelector('.navbar-collapse');
-          if (navbarCollapse.classList.contains('show')) {
-            navbarCollapse.classList.remove('show');
-          }
-        }
-      });
-    });
+  <script src="js/portfolio-navigation.js" defer></script>
 
-    // Highlight active nav link on scroll
-    window.addEventListener('scroll', () => {
-      let current = '';
-      const sections = document.querySelectorAll('.resume-section');
-      
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= (sectionTop - 200)) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      document.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-          link.classList.add('active');
-        }
-      });
-    });
-
-    // Controle dos collapses (Projetos e Experiência)
-    document.addEventListener('DOMContentLoaded', function() {
-      // Atualiza o ícone do chevron quando collapse abre/fecha
-      const collapseElements = document.querySelectorAll('.collapse');
-      
-      collapseElements.forEach(collapseEl => {
-        collapseEl.addEventListener('show.bs.collapse', function () {
-          const button = document.querySelector(`[href="#${this.id}"]`);
-          if (button) {
-            button.classList.remove('collapsed');
-          }
-        });
-        
-        collapseEl.addEventListener('hide.bs.collapse', function () {
-          const button = document.querySelector(`[href="#${this.id}"]`);
-          if (button) {
-            button.classList.add('collapsed');
-          }
-        });
-      });
-
-      // Fechar menu mobile ao clicar em subitem
-      document.querySelectorAll('.nav-subitem .nav-link').forEach(link => {
-        link.addEventListener('click', function() {
-          const navbarCollapse = document.querySelector('.navbar-collapse');
-          if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-              toggle: false
-            });
-            bsCollapse.hide();
-          }
-        });
-      });
-    });
-  </script>
-  
   <script>
     // BASE DE DADOS DE CERTIFICADOS
     const certificatesData = {
@@ -2236,6 +2196,20 @@ password: Padrão de Teste → "123456789"
       }
     };
 
+    let certificateTrigger;
+    document.querySelectorAll('[data-certificate]').forEach(function(card) {
+      card.addEventListener('click', function() {
+        certificateTrigger = card;
+        openCertModal(card.dataset.certificate);
+      });
+      card.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          card.click();
+        }
+      });
+    });
+
     function openCertModal(certId) {
       const cert = certificatesData[certId];
       if (!cert) return;
@@ -2255,12 +2229,15 @@ password: Padrão de Teste → "123456789"
 
       modal.classList.add('active' );
       document.body.style.overflow = 'hidden';
+      modal.querySelector('.modal-close').focus();
     }
 
     function closeCertModal() {
       const modal = document.getElementById('certModal');
+      if (!modal.classList.contains('active')) return;
       modal.classList.remove('active');
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = '';
+      certificateTrigger?.focus();
     }
 
     document.addEventListener('keydown', function(e) {

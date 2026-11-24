@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Francisco Carvalho — Pay2Free, PIX, identidade digital e engenharia de qualidade">
+  <title>Pay2Free / Estrela Bet / StelarGaming - Francisco Carvalho | QA Sênior</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500;700&family=Muli:wght@400;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #bd5d38;
+      --secondary-color: #495057;
+      --dark-bg: #1a1a2e;
+    }
+
+    body {
+      font-family: 'Muli', sans-serif;
+      color: var(--secondary-color);
+      background: #f8f9fa;
+      padding: 2rem 0;
+    }
+
+    .detail-container {
+      max-width: 1200px;
+      margin: 80px auto 40px;
+      background: white;
+      padding: 3rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+
+    .company-header {
+      text-align: center;
+      padding-bottom: 2rem;
+      border-bottom: 3px solid var(--primary-color);
+      margin-bottom: 3rem;
+    }
+
+    .company-header h1 {
+      color: var(--dark-bg);
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .company-header h2 {
+      color: var(--primary-color);
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+
+    .company-header .meta {
+      color: var(--secondary-color);
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+
+    h5 {
+      color: var(--primary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    .skill-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 0.5rem 1rem;
+      margin: 0.3rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .bottom-navigation {
+      text-align: center;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 2px solid #dee2e6;
+    }
+
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 3px;
+      color: #d63384;
+      font-size: 0.9em;
+    }
+
+    table {
+      margin-top: 1rem;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background: #f8f9fa;
+    }
+
+    @media (max-width: 768px) {
+      .detail-container {
+        margin: 60px 1rem 40px;
+        padding: 1.5rem;
+      }
+      
+    }
+    .detail-container section { scroll-margin-top: 5rem; }
+    .detail-container h6 { font-weight: 800; }
+  </style>
+  <link href="css/portfolio-case.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="detail-top-actions">
+    <a href="index.html#pay2free" class="portfolio-button portfolio-button--secondary">
+    <i class="fas fa-arrow-left"></i> Voltar ao Portfólio
+    </a>
+  </div>
+
+  <div class="detail-container">
+    <div class="company-header">
+      <h1>Pay2Free / Estrela Bet / StelarGaming</h1>
+      <h2>Senior Quality Engineer / SDET</h2>
+      <div class="meta">
+        <i class="far fa-calendar-alt"></i> Tecla T · Julho a novembro de 2026 · Híbrido, SP
+      </div>
+    </div>
+
+    <p>Atuei em qualidade de <strong>identidade digital e pagamentos PIX</strong> na Pay2Free, com KYC, documentoscopia, prova de vida, Face Match, depósitos e saques nas integrações Banux/Pixer. Acompanhei os fluxos da interface à decisão persistida, com trabalho de automação, investigação e reteste em sandbox junto a Desenvolvimento.</p>
+    <p>Em pagamentos, acompanhei o retorno HTTP, o estado financeiro, a decisão de negócio e a entrega do callback. Na automação, um dos runners suportava 18 dos 50 cenários do catálogo Banux. Na identidade digital, revalidei as etapas de OCR e PAD no AWS Bedrock e conferi os resultados com o estado do onboarding.</p>
+
+    <section id="metodo">
+      <h5><i class="fas fa-clipboard-check" aria-hidden="true"></i> Como conduzi a validação de ponta a ponta</h5>
+      <ol>
+        <li><strong>Defini a regra e a evidência esperada.</strong> Antes de executar, mapeei a jornada e identifiquei o que deveria acontecer em cada camada: resposta da API, evento assíncrono, estado no banco e retorno para o usuário ou estabelecimento.</li>
+        <li><strong>Preparei o ambiente e a massa.</strong> Registrei a configuração inicial, a dependência do simulador ou fornecedor e os dados necessários para reproduzir a execução. Ao avaliar uma regra configurável, comparei o comportamento com a regra ativada e desativada.</li>
+        <li><strong>Executei e capturei os pontos de correlação.</strong> Usei Ruby/HTTParty nos fluxos de API e Selenium/CDP no onboarding Web. Registrei o identificador da execução, os horários e os retornos para acompanhar a mesma operação entre interface, serviços e banco.</li>
+        <li><strong>Conferi o estado persistido.</strong> Com acesso de leitura ao MongoDB, comparei cobrança, saque, devolução e callback nos fluxos PIX. No KYC, cruzei OCR, decisão biométrica e estado de verificação. Quando disponíveis, CloudWatch e Datadog ajudaram a reconstruir a sequência.</li>
+        <li><strong>Registrei a conclusão e tratei o reteste.</strong> Documentei a primeira divergência entre o esperado e o observado e levei a evidência a Desenvolvimento. Quando o simulador ou a massa limitava a conclusão, registrei a dependência e o que precisava ser verificado em nova execução.</li>
+      </ol>
+    </section>
+
+    <section id="kyc">
+      <h5><i class="fas fa-id-card" aria-hidden="true"></i> KYC e biometria facial</h5>
+      <p>Acompanhei a jornada desde a consulta cadastral e abertura da sessão até a decisão de verificação. O objetivo era demonstrar que o estado apresentado ao usuário correspondia às etapas efetivamente concluídas no backend.</p>
+      <ul>
+        <li><strong>Consulta e elegibilidade.</strong> Comparei retornos para cadastros regulares, inválidos, não localizados e sujeitos a restrições. Cruzei o Hub, o cache de Liveness, a base de consultas sem resultado e o fornecedor para investigar campos ausentes, registros não gravados e reconsultas indevidas por plano.</li>
+        <li><strong>Jornada Web e mobile.</strong> Acompanhei o disparo e a autenticação, o consentimento, a seleção e o envio do documento, o OCR e a captura facial. A automação cuidava do disparo, upload e navegação. A selfie permanecia manual.</li>
+        <li><strong>Validação biométrica.</strong> Correlacionei o identificador da jornada com a leitura documental, o veredito de prova de vida, a execução do Face Match, a similaridade e o estado persistido. Avaliei cada etapa separadamente para localizar divergências de decisão.</li>
+      </ul>
+      <p><strong>Similaridade facial observada.</strong> Em duas verificações com correspondência, o sistema registrou scores de <strong>68,44 e 59,31</strong> diante de um limiar configurado de <strong>40</strong> no ambiente observado. Conferi o score, o limiar, o veredito e o indicador de execução do Face Match. A cobertura próxima ao limiar e a comparação entre pessoas diferentes ficaram em aberto. Os valores são scores do motor, cuja interpretação como porcentagem exige confirmação da escala.</p>
+    </section>
+
+    <section id="execucao-assistida">
+      <h5><i class="fas fa-user-check" aria-hidden="true"></i> Automação de onboarding com agentes e pausa para biometria</h5>
+      <p>O onboarding era uma aplicação da <strong>automação orquestrada por agentes</strong>. Os agentes usavam requisitos, evidências recuperadas pelo RAG e observações da interface para decidir como acompanhar a jornada. O runner Ruby com Selenium/CDP executava as etapas repetíveis. O trabalho com Playwright, Smart Locator e MCP complementava a automação Web na identificação de elementos, navegação e análise da interface.</p>
+      <ol>
+        <li><strong>Início da jornada.</strong> O runner disparava a sessão, acompanhava a navegação, registrava o identificador da transação e preparava o upload. O agente ajudava a interpretar a tela e a identificar mudanças que afetavam a execução.</li>
+        <li><strong>Captura facial.</strong> Ao chegar à etapa de biometria, o fluxo aguardava a interação humana. Eu realizava a captura e cumpria as orientações de prova de vida na interface. O resultado biométrico vinha do serviço de identidade.</li>
+        <li><strong>Retomada e verificação.</strong> Depois da captura, a automação acompanhava a navegação e as respostas de rede até o resultado. Correlacionei a mesma transação com o retorno de OCR, PAD, Face Match e a decisão persistida no MongoDB.</li>
+        <li><strong>Revisão da execução.</strong> Verifiquei se havia um desfecho explícito e se interface, API e banco concordavam. Diante de uma divergência, localizei a etapa em que ela surgiu e registrei a evidência para investigação ou reteste.</li>
+      </ol>
+      <p>O acervo documenta três rotinas Ruby para disparo de Liveness, envio de documento e acompanhamento completo da jornada. A execução se conectava ao <a href="#jira-qa">fluxo de QA no Jira</a> pelos critérios de aceite e pelas evidências usadas no retorno da história.</p>
+    </section>
+
+    <section id="orquestracao">
+      <h5><i class="fas fa-network-wired" aria-hidden="true"></i> Orquestração KYC e integração com fornecedores</h5>
+      <p>Documentei o encadeamento de consentimento, seleção de documento, frente e verso, upload, OCR, selfie real, PAD, Face Match e decisão de onboarding. Conferi a coerência entre tela, API, MongoDB e BackOffice, incluindo diferenças entre Web e mobile e os pontos em que o usuário poderia retomar uma sessão em outro canal.</p>
+      <p>Avaliei a operação com <strong>Unico, Serasa e o motor próprio</strong>. O motor interno fazia parte da estratégia de substituição futura dos provedores externos. Durante a transição, acompanhei seleção de fornecedor, pesos, prioridades, fallback em indisponibilidade, cache por plano e reconsulta. Conferi qual rota foi escolhida, qual resultado chegou ao backend e qual decisão foi persistida. Na consulta cadastral, usei a persistência para diferenciar ausência de registro, retorno incompleto e reconsulta indevida.</p>
+      <p>Nas evidências de OCR, comparei a extração dos dados com os atributos de qualidade do documento, a mensagem de nova captura e o estado de onboarding. A matriz de reteste incluiu documento digital por canal, concorrência Web/mobile, tentativas e bloqueio, qualidade da selfie e tempo de resposta. A presença de documento vencido ou desgastado foi registrada como variável das amostras.</p>
+    </section>
+
+    <section id="bedrock">
+      <h5><i class="fas fa-brain" aria-hidden="true"></i> AWS Bedrock · Documentoscopia e segurança de IA</h5>
+      <p>Reteste após troca de modelos no AWS Bedrock: Grok 4.3 para OCR/documentoscopia e Gemma 3 12B IT para PAD; registro anterior mencionava Claude Sonnet, sem identificação verificável de versão. Objetivo: avaliar entradas adversariais, separação entre OCR e validação de identidade, detecção de instruções não confiáveis, segurança de upload e decisão server-side. Testes autorizados em sandbox, com documentos próprios e massas sintéticas. Evidências brutas mantidas fora do Git. Não foram usados rostos de terceiros sem consentimento.</p>
+      <p>Comparei o reconhecimento do documento, a presença facial e a decisão final para identificar em qual camada cada resultado era produzido. Essa distinção orientou a análise de inconsistências entre o retorno do modelo, o estado no MongoDB e a orientação entregue ao usuário.</p>
+      <ul>
+        <li><strong>Grok 4.3 e documentoscopia.</strong> Na revisão do pipeline, avaliei tipificação de CNH, RG/CIN e passaporte, leitura de frente e verso, extração de campos, qualidade da imagem e consistência com o cadastro.</li>
+        <li><strong>Gemma 3 e prova de vida.</strong> Acompanhei o retorno de PAD e comparei a decisão de presença real com a etapa posterior de Face Match e o resultado gravado. Isso permitiu avaliar qual componente aprovava, rejeitava ou encaminhava a jornada.</li>
+        <li><strong>Resultado por camada.</strong> Houve rejeições antes da análise do modelo e também jornadas em que o OCR extraiu conteúdo, mas a camada biométrica bloqueou a verificação. Registrei esse comportamento nas condições exercitadas, preservando a diferença entre a leitura de um documento e a aprovação da identidade.</li>
+      </ul>
+      <p><strong>Cobertura documental por canal.</strong> Conferi o tipo selecionado e o reconhecido, a disponibilidade de documento digital na Web e no mobile, a leitura de frente e verso quando exigida e o tratamento de documentos vencidos, danificados ou com baixa qualidade de captura. Comparei o motivo registrado com a orientação apresentada ao usuário.</p>
+    </section>
+
+    <section id="seguranca">
+      <h5><i class="fas fa-shield-alt" aria-hidden="true"></i> Segurança cibernética e integridade de IA e APIs</h5>
+      <p>Atuei em duas superfícies ligadas ao risco financeiro: a API que recebe e processa eventos PIX e a documentoscopia que fornece evidências para decisões de identidade. Em ambas, acompanhei o dado de entrada, a decisão de cada serviço, o estado persistido e o efeito sobre o usuário ou a transação.</p>
+      <h6>Segurança das APIs de pagamento</h6>
+      <ul>
+        <li><strong>Prompt injection em entradas multimodais.</strong> Em sandbox autorizado, avaliei se conteúdo não confiável em documentos e imagens era tratado como dado. Registrei quando a entrada era barrada no upload, quando o OCR apresentava inconsistências e quando a decisão final era tomada pela camada biométrica ou pelas regras do backend.</li>
+        <li><strong>Integridade de payloads e eventos de pagamento.</strong> Explorei cenários de envenenamento de payload e inconsistência entre valor, status e dados bancários. Cruzei validação de contrato, resposta da API, persistência no MongoDB e efeitos sobre a transação para avaliar se entradas inconsistentes alteravam indevidamente o estado financeiro.</li>
+        <li><strong>Segurança de APIs e regras de negócio.</strong> Verifiquei autenticação e contexto do estabelecimento, validação de campos obrigatórios e valores inválidos, consistência de conta e titularidade, e aplicação de regras de compliance antes da autorização. Em cada camada, conferi o retorno da API e se havia registro ou efeito financeiro posterior.</li>
+        <li><strong>Eventos assíncronos e proteção contra duplicidade.</strong> Analisei idempotência, repetição de solicitações e consistência entre o evento bancário e o estado da cobrança ou saque. Usei MongoDB e telemetria para distinguir rejeição, aceitação para processamento, devolução e falha de entrega do callback.</li>
+        <li><strong>Limites da evidência.</strong> Registrei separadamente detecção pelo modelo, rejeição pelo backend e impacto no fluxo. Nas integrações Unico e Serasa, as evidências de comportamento inesperado foram encaminhadas pela equipe aos fornecedores para análise.</li>
+      </ul>
+      <p><strong>O que as evidências demonstraram.</strong> Na criação de depósito, observei rejeição por CPF inválido, recusa de autorização para estabelecimento inexistente e retorno específico de limite de geração de QR Codes. No processamento assíncrono, acompanhei eventos que receberam HTTP 200 e depois acionaram bloqueio e devolução por regra de negócio. No MongoDB, conferi o motivo, o vínculo com a cobrança e a referência da reversão. A aceitação da devolução pelo parceiro, com estado ainda em processamento, foi registrada como uma etapa distinta da liquidação.</p>
+
+      <h6>Prompt injection na documentoscopia e encaminhamento aos fornecedores</h6>
+      <p>Em avaliações autorizadas, a equipe reproduziu comportamento vulnerável a <strong>prompt injection na documentoscopia</strong> nas integrações com <strong>Serasa e Unico</strong>. A investigação avaliou o envenenamento do payload documental, ou seja, se conteúdo não confiável no documento ou nos dados derivados influenciava o resultado da leitura. A equipe consolidou as evidências e encaminhou os achados aos fornecedores para análise e mitigação.</p>
+      <p>Para avaliar o impacto, diferenciei a alteração no comportamento do OCR da decisão de verificação de identidade. Cruzei o resultado documental com prova de vida, Face Match, regra de autorização e estado final no MongoDB. Na campanha do motor próprio no Bedrock, documentei rejeições no upload, inconsistências na extração e situações em que a etapa facial barrou a verificação após o OCR. Isso mostrou onde os controles atuaram nas execuções observadas.</p>
+
+      <h6>Cobertura complementar proposta</h6>
+      <ul>
+        <li><strong>Controle de acesso e segregação.</strong> Verificar autorização por operação e estabelecimento, escopo de credenciais e acesso aos registros de transação e onboarding, incluindo a consistência entre API e BackOffice.</li>
+        <li><strong>Autenticidade e ciclo de vida dos eventos.</strong> Cobrir verificação de origem, repetição, eventos fora de ordem, idempotência, conciliação e retentativas. Conferir que o estado financeiro e a entrega do callback permanecem rastreáveis.</li>
+        <li><strong>Validação independente da saída de IA.</strong> Conferir schema, coerência dos campos, origem do dado, tratamento de erros e decisão final no backend. Revalidar a cobertura após troca de modelo ou fornecedor, com amostras autorizadas e evidência por camada.</li>
+        <li><strong>Proteção de dados e observabilidade.</strong> Revisar o mascaramento de dados de identidade em logs, relatórios e evidências, os registros de acesso e a correlação necessária para investigação sem exposição de dados pessoais.</li>
+      </ul>
+    </section>
+
+    <section id="ux-captura">
+      <h5><i class="fas fa-mobile-alt" aria-hidden="true"></i> Experiência de captura e automação do onboarding</h5>
+      <p>Correções de automação: detecção genérica de carregamento em vez de frases fixas; ramificação por URL de retorno; interceptação XHR além de fetch; investigação de permissões de câmera CDP; consentimento adicional; espera ativa de navegação; tratamento de DOM stale após upload; nova leitura quando tela ainda renderizava. Evidência de sucesso baseada no estado final explícito, não em sessão expirada ou tela intermediária.</p>
+      <p>Campanha curta pré-deploy de feedbacks: passaporte com sombra, reflexo, baixa luminosidade, posição da mão e resolução. Reutilização de imagem anteriormente aceita, agora recusada repetidamente. Front exibiu baixa resolução e orientação para câmera mesmo na jornada upload. Banco registrou extração de dados essenciais, documento reconhecido, foto 3x4 aceitável, qualidade global ruim e recomendação de nova foto. Documento desgastado e vencido são fatores de confusão; não se conclui falso negativo sem contrato de qualidade e controle de massa. Risco de abandono e mensagem descontextualizada discutidos com desenvolvimento. Sem logs nesta rodada; hipótese de pré-processamento por Lambda não confirmada.</p>
+      <p><strong>Resultado observado no MongoDB.</strong> Em um registro, onboarding e verificação ainda estavam em solicitação, com ocorrências de baixa qualidade no OCR. No outro, o documento foi classificado como danificado e a jornada terminou com falha documental e verificação reprovada. A classificação do passaporte e a extração de campos puderam ser observadas mesmo com a recusa. Usei essa comparação para distinguir o reconhecimento do documento, a avaliação de qualidade e o resultado da jornada.</p>
+    </section>
+
+    <section id="pix">
+      <h5><i class="fas fa-arrow-circle-down" aria-hidden="true"></i> PIX Cash-in · Depósitos, compliance e devolução</h5>
+      <p>Preparei o sandbox para acompanhar o depósito pela integração Banux. Correlacionei solicitação, cobrança e evento bancário pelo identificador da transação. A partir desse vínculo, conferi a decisão de compliance e procurei o registro da devolução ou da comunicação ao estabelecimento.</p>
+      <p><strong>Resultado observado no MongoDB.</strong> Com a regra de conta divergente ativa, a cobrança entrou em processamento de devolução e foi criado um registro de devolução automática. Em outra execução, o banco registrou a falha de entrega do callback. A evidência permitiu distinguir o início da devolução, a confirmação final e a entrega da notificação ao estabelecimento.</p>
+      <ul>
+        <li><strong>QR e integridade do depósito.</strong> Validei a relação entre cadastro, emissão do QR, cobrança, recebimento e persistência, incluindo reaproveitamento de cadastros e comportamento diante de nova solicitação. Localizei a referência externa do cliente no banco. A regra formal de unicidade dessa referência ficou em aberto.</li>
+        <li><strong>Regras de negócio e BackOffice.</strong> Comparei a configuração do estabelecimento com o resultado de cadastro, conta divergente, PIX cruzado e restrições de compliance. O acompanhamento ia da decisão registrada até a ação posterior sobre a cobrança.</li>
+        <li><strong>Limites de testabilidade.</strong> Documentei o recebimento de um depósito externo sem cobrança correlata e sem devolução registrada. Na conciliação manual, o simulador bloqueou a validação. Registrei a limitação para orientar a próxima rodada.</li>
+      </ul>
+    </section>
+
+    <section id="cashout">
+      <h5><i class="fas fa-arrow-circle-up" aria-hidden="true"></i> PIX Cash-out · Saques, conciliação e callbacks</h5>
+      <p><strong>Biometria facial como condição para sacar.</strong> O fluxo exigia verificação facial para liberar o saque. Na validação da jornada, a prova de vida verificava a presença real e o Face Match comparava a selfie com a referência de identidade. O ponto de controle era a decisão de autorização no backend, conferida em conjunto com o estado do saque e o resultado comunicado ao usuário.</p>
+      <p>Acompanhei o saque da solicitação à validação da chave, confirmação do parceiro, evento bancário e callback. Cruzei o pagamento e a conta bancária referenciada com os registros de confirmação. Também comparei configurações de limite e bloqueio entre as camadas, com a precedência das regras ainda em investigação.</p>
+      <p><strong>Resultado observado no MongoDB.</strong> Em quatro saques investigados, dois permaneciam em processamento sem referência de conta bancária. Dos dois concluídos, um tinha valor consistente entre banco e evento e o outro apresentava divergência. No registro consistente, foi possível reconstruir a ordem entre confirmação, conclusão e gravação do callback. A origem das divergências de valor e dados bancários ficou em investigação, pois o comportamento do simulador ainda precisava ser isolado.</p>
+      <ul>
+        <li><strong>Integridade do saque.</strong> Cruzei o valor, o estado e a conta vinculada com as informações devolvidas na confirmação e no evento bancário. As divergências de agência, conta e instituição foram registradas com a respectiva etapa de origem observada.</li>
+        <li><strong>Conciliação e comunicação.</strong> Usei os horários para reconstruir a sequência. Em um saque concluído, decorreram cerca de 22 minutos da confirmação inicial à conclusão, e o callback foi gravado cerca de três segundos depois. A gravação foi a evidência disponível para essa etapa.</li>
+        <li><strong>Dependências da validação.</strong> Documentei o que ainda dependia de confirmação do simulador, de retentativas, de jobs assíncronos e da precedência entre regras de limite e bloqueio.</li>
+      </ul>
+    </section>
+
+    <section id="runbooks">
+      <h5><i class="fas fa-search" aria-hidden="true"></i> Investigação transacional e suporte ao reteste</h5>
+      <h6>Conta divergente, restrições de cadastro e devolução</h6>
+      <p>Usei as versões do runbook de Cash-in e as evidências de execução para acompanhar o mesmo depósito em condições diferentes de configuração. Comparei o resultado com a regra de divergência desativada e ativada. Quando a regra bloqueou o depósito, conferi o estado da cobrança e a criação da devolução automática. A solicitação de devolução aceita pelo parceiro e a confirmação terminal foram tratadas como eventos distintos.</p>
+      <p>Nos cenários de menor de idade, óbito, pessoa jurídica, lista restritiva e PIX cruzado, o foco da verificação era identificar a decisão de negócio e os registros posteriores. Isso permitiu documentar quando o bloqueio havia sido aplicado e quando uma condição de massa ou fornecedor impedia avaliar a regra isoladamente.</p>
+      <h6>Retentativas, persistência e callback</h6>
+      <p>Conferi se o evento bancário, a persistência do pagamento e a entrega ao estabelecimento mantinham estados coerentes em processamento assíncrono. Em uma rodada de Cash-in, a falha de entrega do callback ficou registrada enquanto a decisão financeira seguia seu próprio estado. A cobertura de conciliação manual permaneceu bloqueada por comportamento do simulador, com ajuste de ambiente ou homologação assistida como caminhos de reteste.</p>
+      <p>No Cash-out, cruzei o estado do saque, a conta bancária referenciada, a confirmação do parceiro, o evento bancário e o callback. Registrei separadamente divergências de valor e de dados bancários. Mantive pendentes os cenários que dependiam de jobs, cache, retentativas ou comprovação de liquidação fora do sandbox.</p>
+    </section>
+
+    <section id="integracoes-bancarias">
+      <h5><i class="fas fa-landmark" aria-hidden="true"></i> Integrações bancárias, consultas e rastreabilidade no MongoDB</h5>
+      <h6>Elegibilidade para saque e confirmação bancária</h6>
+      <p>A jornada só permitia sacar a quem tivesse cadastro e verificação facial aprovada. A prova de vida verificava a presença da pessoa, enquanto o Face Match conferia a correspondência com a referência de identidade. Essas verificações faziam parte da elegibilidade. Em seguida, a autorização precisava ser acompanhada na operação de saque, com a chave PIX, o recebedor, os dados bancários e as regras do estabelecimento.</p>
+      <p>Na integração Pay2Free com Banux/Pixer, diferenciei as etapas de solicitação, validação da chave, confirmação pelo parceiro, evento bancário, atualização do saque e comunicação ao estabelecimento. O simulador permitia exercitar parte desse percurso. As consultas e conciliações que dependiam do BackOffice ou da instituição financeira foram registradas conforme a disponibilidade do ambiente.</p>
+
+      <h6>O que eu consultava no banco em cada etapa</h6>
+      <ul>
+        <li><strong>Identidade e configuração.</strong> Correlacionei o cadastro e a decisão de verificação facial com a solicitação de saque. Na configuração financeira, consultei estabelecimento, plataforma, conta da instituição, limites e bloqueios para entender quais regras poderiam influenciar a autorização.</li>
+        <li><strong>Conta e recebedor.</strong> Conferi a conta bancária referenciada pelo pagamento e comparei documento de titularidade, agência, conta e identificador da instituição com os dados da confirmação e do evento. A existência de registros históricos exigia seguir a conta vinculada ao saque, além de consultar o cadastro do cliente.</li>
+        <li><strong>Depósito e devolução.</strong> Relacionei a solicitação de depósito à cobrança e ao evento bancário pelo identificador da transação. Quando compliance bloqueava a operação, busquei o registro de devolução automática e o estado da reversão. O acompanhamento separava abertura, aceitação para processamento e confirmação da devolução.</li>
+        <li><strong>Saque e callback.</strong> Relacionei a solicitação de saque ao registro do pagamento, à conta utilizada, ao evento bancário e ao callback do estabelecimento. Comparei os estados e os horários da solicitação, do processamento e da conclusão. A persistência do callback demonstrava sua criação, e a comprovação da entrega dependia do respectivo retorno.</li>
+      </ul>
+
+      <h6>O que os registros demonstraram em sandbox</h6>
+      <ul>
+        <li><strong>Transições e valores.</strong> Em um saque de R$ 0,08, o valor convergiu entre o pagamento e o evento. O banco registrou a passagem de solicitado para em processamento e concluído, com o callback correlacionado. Outro saque foi marcado como concluído com R$ 0,06 no pagamento e R$ 0,01 no evento. A discrepância ficou registrada para execução com massa controlada.</li>
+        <li><strong>Histórico de contas.</strong> A consulta retornou cinco contas históricas para o mesmo cadastro. Os dois saques concluídos referenciavam a mesma conta final. Documentei diferenças entre os dados da confirmação e do evento. A evidência ainda deixava em aberto a regra de criação ou reaproveitamento da conta e o efeito da massa do simulador.</li>
+        <li><strong>Limites, bloqueios e consultas por chave.</strong> Observei limites coincidentes no estabelecimento e no banco, com precedência ainda em investigação. Documentei também divergências em configurações de bloqueio e em retornos de telefone e chave aleatória. As demais consultas e a conciliação manual ficaram condicionadas à cobertura disponível no ambiente.</li>
+      </ul>
+    </section>
+
+    <section id="automacao">
+      <h5><i class="fas fa-vial" aria-hidden="true"></i> Automação de API, Web e evidências</h5>
+      <p>Runners Ruby parametrizáveis, HTTParty/API REST, Selenium, Chrome DevTools Protocol, geração de massa, payload e response, latência, CSV, JSON, Markdown e screenshots. O runner de depósito e webhook cobria negativos de CPF/e-mail, valor zero/nulo, merchant inexistente, menor, idempotência, adulteração de valor/status/ISPB/conta, JSON malformado e rajadas. O runner de performance com force-callback no backend próprio evitava carga direta no parceiro; resultado sem sucesso foi tratado como massa inadequada, não como benchmark válido.</p>
+      <p>Acesso inicialmente limitado a API e front. HTTP 200 de webhook assíncrono não demonstrava processamento; cinco cenários de integridade ficaram inconclusivos sem leitura do banco. Formalizei solicitação de acesso read-only ao MongoDB, com menor privilégio e justificativa técnica. Após liberação, retomada de Cash-in e Cash-out para cruzar estados, eventos e evidências. CloudWatch e Datadog apoiaram troubleshooting e investigação conjunta com desenvolvimento, sem pressupor acesso a logs em todas as rodadas.</p>
+      <p>Organizei os runners para registrar os dados da execução e o resultado observado de forma reutilizável. A saída estruturada apoiava a comparação entre rodadas, a reprodução junto a Desenvolvimento e a atualização dos runbooks. No onboarding, a captura de rede e a verificação do estado final ajudaram a separar falha de navegação, atraso de processamento e rejeição do documento.</p>
+    </section>
+
+    <section id="agentes">
+      <h5><i class="fas fa-robot" aria-hidden="true"></i> Orquestração multiagente com Claude Code e MCP</h5>
+      <h6>Como os prompts eram criados</h6>
+      <p>Defini os subagentes do Claude Code em arquivos Markdown com frontmatter. O cabeçalho declarava o nome, quando o agente deveria ser chamado e quais ferramentas podia usar. No corpo, descrevi a tarefa, a fonte primária, o que precisava ser conferido e a saída esperada. A divisão permitia aplicar instruções e permissões diferentes para ler um contrato, projetar uma suíte, navegar por uma tela e verificar uma execução real.</p>
+      <ul>
+        <li><strong>História de QA.</strong> Lia a história e os critérios de aceite no Jira, recuperava contexto no RAG e preparava plano e cenários para revisão e documentação no Notion.</li>
+        <li><strong>Geração de cenários.</strong> Interpretava DOM ou XML da tela para propor cobertura Web e mobile e encaminhar sugestões de locators, Page Objects e specs ao fluxo de automação.</li>
+        <li><strong>Arquitetura de API e arquitetura Web.</strong> Dois agentes separados liam contratos, código e estrutura das suítes para orientar a organização de cada camada. Ambos tinham ferramentas de leitura.</li>
+        <li><strong>Navegação mobile e navegação Web.</strong> Dois agentes distintos interpretavam o estado da tela e acompanhavam a jornada. Em mobile, a exploração usava a hierarquia da interface. Na Web, o MCP Chrome DevTools apoiava a observação de DOM, rede e console.</li>
+        <li><strong>Verificação de execução.</strong> O verificador rodava o script no ambiente previsto e conferia a saída e os artefatos. O relatório distinguia execução comprovada, comportamento divergente e resultado inconclusivo.</li>
+        <li><strong>Documentoscopia e Liveness.</strong> O especialista acompanhava o onboarding de identidade, da abertura da sessão ao upload, à captura humana e à retomada da observação após a prova de vida.</li>
+      </ul>
+      <h6>Como as camadas se conectavam</h6>
+      <ol>
+        <li><strong>Roteamento e contexto.</strong> O Claude Code selecionava o subagente pela descrição da tarefa. A recuperação começava pela fonte primária, como uma história, um contrato ou uma captura da tela. O hash permitia reutilizar uma análise já registrada para a mesma entrada e contexto.</li>
+        <li><strong>Interpretação.</strong> A primeira camada aproveitava dados estruturados sem acionar um modelo. Quando era preciso interpretar regras ou estados, o fluxo recorria ao modelo textual. A camada visual entrava quando a imagem acrescentava informação. O registro da execução incluía tokens, latência e custo quando disponíveis.</li>
+        <li><strong>Preparação.</strong> O agente propunha cobertura e artefatos de automação. Separei locators por tela, ações, coordenação da execução e validações para que a revisão com Cline e o reteste pudessem se concentrar na responsabilidade alterada.</li>
+        <li><strong>Execução assistida.</strong> O runner conduzia as etapas repetíveis e o agente acompanhava a interface. A biometria aguardava a captura humana. Depois, a automação retomava a observação e a coleta de evidências até a decisão disponível.</li>
+        <li><strong>Verificação e registro.</strong> O agente verificador conferia o resultado da execução. No onboarding, comparei interface, resposta do serviço e MongoDB. O retorno para Jira e Notion vinculava o achado ao critério de aceite e à evidência observada.</li>
+      </ol>
+      <ul>
+        <li><strong>Entrada de trabalho.</strong> Histórias e subtarefas de QA no Jira, contratos de API, HTML/DOM ou XML, screenshots e observações da equipe.</li>
+        <li><strong>Especialização.</strong> Oito subagentes Claude Code apoiavam análise, estratégia, cenários, navegação Web, API, verificação, documentação e relatório. Agent Skills mantinham instruções reutilizáveis e o MCP Chrome DevTools apoiava a análise em Network, DOM e Console.</li>
+        <li><strong>Contexto.</strong> SQLite/FTS5 e cache por hash davam acesso ao contexto local. O pipeline começava pela interpretação determinística, usando modelo textual e visão quando o material exigia interpretação adicional.</li>
+        <li><strong>Execução e rastreabilidade.</strong> Ruby/RSpec, HTTParty, Selenium e CDP registravam a interação, os estados observados e as evidências. Os resultados eram vinculados a casos, bugs e relatórios em Jira ou Notion.</li>
+        <li><strong>Permissões e revisão.</strong> Os agentes tinham responsabilidades delimitadas. A execução seguia as permissões do ambiente, e as conclusões passavam por revisão humana e evidência da rodada.</li>
+      </ul>
+    </section>
+
+    <section id="smart-locator">
+      <h5><i class="fas fa-crosshairs" aria-hidden="true"></i> Smart Locator com Playwright e bounds da tela</h5>
+      <p>Usei a geometria do elemento na tela, ou <em>bounds</em>, como evidência adicional na resolução de locators. Em Web, o Playwright lia o DOM e a caixa delimitadora. Em mobile, o XML do UiAutomator fornecia a posição e o tamanho. Cruzei a região da tela com papel, rótulo e contexto para reduzir a busca entre candidatos e evitar novas análises quando a tela já era conhecida.</p>
+      <p>Adaptei a busca no Playwright para esse fluxo, com foco em reduzir o tempo de resolução quando seletores fixos ficavam frágeis. A posição ajudava a escolher o candidato. Antes da ação, eu conferia identidade e prontidão do elemento, e depois verificava o efeito esperado. Esse era o ganho buscado em relação à busca convencional por seletor. Os registros disponíveis não trazem benchmark comparativo com Cypress ou Playwright padrão.</p>
+      <ul>
+        <li><strong>Locators por tela.</strong> Mantive a identificação dos elementos em arquivos separados por tela para concentrar mudanças de DOM/XML e facilitar a manutenção.</li>
+        <li><strong>Ações, execução e validação.</strong> As ações descreviam as interações, o runner coordenava a sequência e a validação conferia o estado ou efeito observado. Assim, uma mudança de seletor podia ser revisada separadamente da regra de negócio.</li>
+        <li><strong>Revisão de código com Cline.</strong> Usei Cline como apoio para revisar estrutura, duplicação, responsabilidades dos Page Objects e consistência das validações. As sugestões passavam por revisão e execução antes de serem incorporadas.</li>
+      </ul>
+    </section>
+
+    <section id="jira-qa">
+      <h5><i class="fas fa-tasks" aria-hidden="true"></i> Do requisito no Jira ao relatório de QA</h5>
+      <ol>
+        <li><strong>Entrada.</strong> O agente lia a história, os critérios de aceite e os artefatos associados. Classificava as regras e apontava dúvidas, dependências e lacunas de cobertura para revisão.</li>
+        <li><strong>Planejamento.</strong> Agentes especializados preparavam o plano de testes e os casos a partir dos critérios, com cobertura funcional, integração, negativos, segurança e regressão conforme o risco. A integração com Notion usava um cliente HTTP próprio para documentar os artefatos.</li>
+        <li><strong>Execução assistida.</strong> O loop coordenava a próxima etapa com contexto de tela, RAG, ferramentas MCP e evidências da execução. A automação tinha guarda de sandbox e pausava para interação humana na biometria e em ações sensíveis. Os agentes de arquitetura tinham acesso de leitura.</li>
+        <li><strong>Resultado.</strong> Os agentes apoiavam a classificação dos achados e a preparação do retorno na história do Jira, com referência ao critério de aceite, resultado observado, evidência e situação do reteste.</li>
+      </ol>
+      <p>O mesmo fluxo de trabalho pode ser adaptado a Azure DevOps e Trello por meio de integrações específicas. A documentação desta experiência descreve Jira e Notion.</p>
+    </section>
+
+    <section id="ia">
+      <h5><i class="fas fa-database" aria-hidden="true"></i> RAG local e análise multimodal</h5>
+      <p><strong>RAG</strong> significa geração aumentada por recuperação. Antes de pedir uma análise ao modelo, o pipeline buscava trechos pertinentes de requisitos, contratos e evidências e os incluía no contexto da tarefa. Usei <strong>SQLite3</strong> como banco local e <strong>FTS5</strong> para indexar e buscar texto. O cache por hash reaproveitava a análise quando o conteúdo e o contexto coincidiam.</p>
+      <p><strong>Busca semântica</strong> recupera material pelo significado, inclusive quando a consulta e o documento usam termos diferentes. Ela pode complementar a busca lexical do FTS5 com embeddings. No laboratório relacionado, a política vetorial foi exercitada com vetores sintéticos. A geração de embeddings reais figurava como etapa pendente.</p>
+      <p>O pipeline priorizava a leitura estruturada do XML, recorria ao modelo textual quando precisava interpretar a regra e acionava visão quando a imagem acrescentava informação. O MCP Chrome DevTools dava acesso a DOM, console, rede e capturas. A recuperação de contexto e a checagem em API, banco e interface reduziam o risco de conclusões sem evidência. Quando a fonte era insuficiente, o resultado ficava pendente de revisão.</p>
+    </section>
+
+    <section id="pesquisa">
+      <h5><i class="fas fa-flask" aria-hidden="true"></i> Pesquisa e protótipos de IA</h5>
+      <h6>Grok Bot para QA Web e mobile</h6>
+      <p>Explorei um agente de trabalho para interpretar contexto, navegar por jornadas, investigar falhas e reunir evidências para revisão. O foco da pesquisa era o fluxo de trabalho de QA em aplicações Web e mobile.</p>
+      <h6>IA conversacional, Typebot e Amazon Connect</h6>
+      <p>Prototipei uma arquitetura de autoatendimento com classificação de intenção, contexto de sessão, transferência para atendimento humano e trilhas de observabilidade. A pesquisa incluiu Typebot, Amazon Connect, Lambda, API Gateway e Bedrock, além de validação de jornadas de chat, Web e IVR.</p>
+    </section>
+
+    <section id="processo">
+      <h5><i class="fas fa-clipboard-check" aria-hidden="true"></i> Processo de qualidade e documentação</h5>
+      <p>Organizei as investigações em runbooks de Cash-in e Cash-out, planos editáveis de Banux e KYC e matrizes com resultado esperado, observado e status. Limitações do simulador, dependências de ambiente e testes pendentes ficaram registradas para orientar a próxima rodada.</p>
+      <ul>
+        <li><strong>Runbook de Cash-in.</strong> Jornada transacional, estados da cobrança e da devolução, matriz histórica, incidentes e roteiro de diagnóstico.</li>
+        <li><strong>Runbook de Cash-out.</strong> Relações entre registros, estados do saque, eventos bancários, callback, divergências e próximos testes.</li>
+        <li><strong>Plano Banux.</strong> Regressão de QR e PIX, contratos, persistência, compliance, resiliência e coleta de evidências.</li>
+        <li><strong>Plano KYC.</strong> Documento, prova de vida, comparação facial, concorrência entre canais, UX da captura e critérios de reteste.</li>
+      </ul>
+      <figure class="qa-process">
+        <img src="img/processo-qa.png" width="1091" height="261" loading="lazy" alt="">
+        <figcaption>Ideia → Planejamento → Desenvolvimento → Testes → Homologação → Produção → Monitoramento.</figcaption>
+      </figure>
+    </section>
+
+    <h5>Stack técnica</h5>
+    <div class="mt-4">
+      <span class="skill-badge">Ruby</span>
+      <span class="skill-badge">RSpec</span>
+      <span class="skill-badge">HTTParty</span>
+      <span class="skill-badge">Selenium / CDP</span>
+      <span class="skill-badge">MongoDB</span>
+      <span class="skill-badge">AWS Bedrock</span>
+      <span class="skill-badge">CloudWatch</span>
+      <span class="skill-badge">Datadog</span>
+      <span class="skill-badge">Claude Code</span>
+      <span class="skill-badge">Agent Skills</span>
+      <span class="skill-badge">MCP</span>
+      <span class="skill-badge">SQLite / FTS5</span>
+      <span class="skill-badge">Jira / Notion</span>
+    </div>
+    <div class="bottom-navigation">
+      <a href="index.html#pay2free" class="portfolio-button portfolio-button--secondary">
+        <i class="fas fa-arrow-left"></i> Voltar ao Portfólio
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

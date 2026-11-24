@@ -1,0 +1,105 @@
+.portfolio-intro {
+  max-width: 61rem;
+}
+
+.portfolio-intro h1 {
+  margin: 0;
+  font-size: clamp(2.9rem, 6.5vw, 6rem);
+  line-height: 1;
+  letter-spacing: -.015em;
+}
+
+.portfolio-intro h1 span {
+  color: #943f29;
+}
+
+.intro-role {
+  margin: 1rem 0 .25rem;
+  color: #292742;
+  font-size: clamp(1.08rem, 2vw, 1.35rem);
+  font-weight: 800;
+}
+
+.intro-context {
+  margin-bottom: 1.3rem;
+  color: #5a5a68;
+  font-size: .95rem;
+}
+
+.intro-lead {
+  max-width: 68ch;
+  margin-bottom: 1.45rem;
+  color: #333341;
+  font-size: clamp(1.03rem, 1.65vw, 1.25rem);
+  line-height: 1.65;
+}
+
+.intro-security {
+  max-width: 68ch;
+  padding-inline-start: 1rem;
+  border-inline-start: 3px solid #bd5d38;
+  color: #373b42;
+  line-height: 1.65;
+}
+
+.intro-practice h2 {
+  margin: 0 0 .5rem;
+  color: #30283a;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.35;
+  text-transform: none;
+}
+
+.intro-practice p:last-child {
+  margin-bottom: 0;
+}
+
+.intro-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icons.intro-contacts a {
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.intro-contacts a:focus-visible {
+  outline: 3px solid #245e89;
+  outline-offset: 3px;
+}
+
+.intro-practice {
+  max-width: 78ch;
+  margin: 2rem 0;
+}
+
+.intro-practice article {
+  padding: 1rem 0;
+  border-top: 1px solid #e8dfdb;
+}
+
+.intro-practice p {
+  color: #4a4651;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.intro-case-link {
+  color: #853a27;
+  font-weight: 800;
+  text-underline-offset: .2em;
+}
+
+.intro-case-link:focus-visible {
+  outline: 2px solid #245e89;
+  outline-offset: 3px;
+}

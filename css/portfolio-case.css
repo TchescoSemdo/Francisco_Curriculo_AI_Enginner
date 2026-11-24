@@ -1,0 +1,192 @@
+/* Shared actions for the résumé, projects, and experience pages. */
+.portfolio-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .625rem;
+  min-height: 44px;
+  max-width: 100%;
+  padding: .65rem 1.05rem;
+  border: 1px solid transparent;
+  border-radius: .3rem;
+  background: #943f29;
+  color: #fff;
+  font: inherit;
+  font-size: .9375rem;
+  font-weight: 800;
+  line-height: 1.35;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .18s ease, color .18s ease, box-shadow .18s ease;
+}
+
+.portfolio-button:hover {
+  background: #79301f;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgb(62 29 20 / 18%);
+}
+
+.portfolio-button--secondary {
+  background: #fff;
+  border-color: #d8b5a9;
+  color: #853a27;
+}
+
+.portfolio-button--secondary:hover {
+  background: #f9eee9;
+  color: #6c2c1d;
+}
+
+.portfolio-button--light {
+  background: #fff;
+  color: #292742;
+}
+
+.portfolio-button--light:hover {
+  background: #f0ecff;
+  color: #201d38;
+}
+
+.portfolio-button:focus-visible,
+.portfolio-icon-button:focus-visible,
+#sideNav .navbar-toggler:focus-visible,
+.social-icons a:focus-visible,
+.cert-card[role="button"]:focus-visible {
+  outline: 3px solid #245e89;
+  outline-offset: 3px;
+}
+
+.portfolio-button--light:focus-visible {
+  outline-color: #fff;
+}
+
+.project-actions,
+.portfolio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin-top: 1rem;
+}
+
+.project-card .project-actions a {
+  color: #292742;
+}
+
+.detail-top-actions {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 0 auto 1rem;
+}
+
+.detail-top-actions + .detail-container,
+.detail-top-actions + .detail-page {
+  margin-top: 0;
+}
+
+.portfolio-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.detail-page pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.portfolio-table-scroll:focus-visible {
+  outline: 2px solid #245e89;
+  outline-offset: 2px;
+}
+
+.experience-card[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+.career-highlights {
+  margin: 2rem 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-radius: .7rem;
+  background: linear-gradient(135deg, #71378a, #a33356);
+  color: #fff;
+}
+
+.career-highlights h4 {
+  margin: 0 0 1.25rem;
+  padding-bottom: .85rem;
+  border-bottom: 1px solid rgb(255 255 255 / 36%);
+  color: #fff;
+}
+
+.career-highlights ul { padding-left: 1.25rem; margin-bottom: 0; }
+
+@media (max-width: 480px) {
+  .project-card { padding: 1.25rem; }
+  .experience-detail .portfolio-button,
+  .project-actions .portfolio-button { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-button { transition: none; }
+}
+
+.qa-process {
+  max-width: 68rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f8f6f2;
+  border: 1px solid #e5dfd8;
+  border-radius: .75rem;
+}
+
+.qa-process img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: .4rem;
+}
+
+.qa-process figcaption { margin-top: .75rem; }
+.case-page { background: #f6f4f1; color: #343a40; font-family: Muli, sans-serif; }
+.case-main { max-width: 64rem; margin: auto; padding: 1.5rem clamp(1rem, 5vw, 3.5rem) 3rem; }
+.case-header { margin: 1.5rem 0 1rem; border-left: .3rem solid #bd5d38; padding-left: 1rem; }
+.case-main h1, .case-main h2 { font-family: "Saira Extra Condensed", sans-serif; color: #25292d; font-weight: 700; }
+.case-main h1 { font-size: clamp(2.3rem, 6vw, 4rem); line-height: 1; }
+.case-main h2 { font-size: 2rem; }
+.case-role { font-weight: 800; margin-bottom: .25rem; }
+.case-meta { color: #5d5550; }
+.case-nav { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin: 1.5rem 0; }
+.case-nav a { color: #98472d; text-decoration: underline; }
+.case-section { background: #fff; border: 1px solid #e5dfd8; border-radius: .75rem; margin-bottom: 1rem; padding: clamp(1rem, 3vw, 1.75rem); scroll-margin-top: 1rem; }
+.case-section > :last-child { margin-bottom: 0; }
+.case-section li + li { margin-top: .5rem; }
+
+.portfolio-summary { max-width: 62ch; line-height: 1.7; }
+.portfolio-summary p { margin-bottom: .75rem; }
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.portfolio-grid .case-section { margin-bottom: 0; }
+.project-detail-link, .project-detail-link:hover {
+  color: #fff;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.project-detail-link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+.case-main h3 { color: #343a40; font-size: 1.2rem; font-weight: 800; margin-top: 1.5rem; }
+.experience-highlights {
+  background: #f8f9fa;
+  border-left: 4px solid #bd5d38;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+}
+.experience-highlights h5 { border: 0; color: #495057; margin: 0 0 1rem; padding: 0; }
+.experience-highlights ul { margin-bottom: 0; }
+.experience-detail { margin-top: 2rem; text-align: center; }
